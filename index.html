@@ -59,7 +59,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,.item:focus-visibl
 <header>
   <div>
     <h1>Pontos críticos do apagão de 7/11, por rua e bairro</h1>
-    <p class="sub">Cada ponto é um local citado por imprensa, prefeituras ou moradores entre 8 e 11/11. Use o nível e as horas sem luz para escolher praças; abra o ponto no Google Maps para escolher a peça.</p>
+    <p class="sub">Cada ponto do evento de 7/11 é um local citado por imprensa, prefeituras ou moradores. Atualização de evidências: 13/11/2026. Use o nível e as horas sem luz para orientar vistorias; abra o ponto no Google Maps para conferir a referência.</p>
   </div>
   <div class="kpis"><div><b id="k3">0</b><span>pontos críticos</span></div><div><b id="kt">0</b><span>pontos no mapa</span></div><div><b id="km">0</b><span>municípios</span></div></div>
 </header>
@@ -95,7 +95,8 @@ button:focus-visible,select:focus-visible,input:focus-visible,.item:focus-visibl
       </div>
     </div>
     <div class="list" id="list"></div>
-    <div class="note">Níveis: <b>crítico</b> = protesto no local ou 70 h ou mais sem luz; <b>alto</b> = 48 h ou mais, ou apontado como o caso mais grave do município; <b>afetado</b> = citado sem duração. A camada de recorrência mostra bairros que também ficaram sem luz em outros temporais de 2026. Números até 10/11; confirme a situação atual nos canais da Light e da Enel antes de fechar praças.</div>
+    <div class="note" id="leads"><b>Pista a validar — fora do ranking e sem marcador geográfico</b><p><b>Campo Alegre, Nova Iguaçu (Light).</b> A Prefeitura confirmou o bairro entre as localidades com interrupções prolongadas após o temporal de 7/11. O balanço municipal menciona até 74 horas no conjunto de bairros Cabuçu, Campo Alegre, Austin e Centro, mas não discrimina a duração individual nem informa rua/quarteirão da ocorrência. Não há coordenada de ocorrência em nível de quarteirão; por isso, Campo Alegre permanece como pista, não como ponto confirmado. <a href="https://novaiguacu.rj.gov.br/2026/11/12/nova-iguacu-cobra-r-1-milhao-da-light-na-justica-apos-apagoes-provocados-pelas-chuvas-do-ultimo-sabado/" target="_blank" rel="noopener">Fonte oficial da Prefeitura, 12/11/2026</a>.</p><p>Cabuçu, Austin e Centro já constam no mapa; a mesma fonte reforça a evidência, mas não autoriza atribuir 74 horas a cada bairro.</p></div>
+    <div class="note">Níveis: <b>crítico</b> = protesto no local ou 70 h ou mais sem luz; <b>alto</b> = 48 h ou mais, ou apontado como o caso mais grave do município; <b>afetado</b> = citado sem duração. A camada de recorrência mostra bairros que também ficaram sem luz em outros temporais de 2026. O histórico do episódio de 7/11 foi revisto com fontes publicadas até 13/11; as referências por bairro ou ponto sem rua/quadra continuam aproximadas. Confirme a situação atual nos canais da Light e da Enel antes de fechar praças.</div>
   </aside>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -122,6 +123,7 @@ a16:["Diário do Rio, 08/11","https://diariodorio.com/ordem-publica/2026/11/08/t
 a17:["Brasil em Folhas (Paquetá)","https://brasilemfolhas.com.br/2026/11/moradores-de-paqueta-relatam-apagoes-e-oscilacoes-de-energia/"],
 a18:["NC News, 09/11 (Paquetá)","https://ncnews.com.br/2026/11/09/moradores-paqueta-enfrentam-apagoes/"],
 a19:["Encontra Queimados, 08/11 (Nilópolis)","https://queimados.encontrariodejaneiro.com.br/falta-de-energia-no-rio-atinge-moradores-e-locais-do-enem/"],
+a20:["Prefeitura de Nova Iguaçu, 12/11 (dados da Light)","https://novaiguacu.rj.gov.br/2026/11/12/nova-iguacu-cobra-r-1-milhao-da-light-na-justica-apos-apagoes-provocados-pelas-chuvas-do-ultimo-sabado/"],
 r1:["Enfoco, fev/2026 (Niterói e São Gonçalo)","https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"],
 r2:["Jornal Atual, ago/2026 (Itaguaí)","https://jornalatual.com.br/falta-de-energia-continua-itaguai"],
 r3:["Jornal Atual, ago/2026 (Brisamar)","https://jornalatual.com.br/tag/light"]
@@ -153,9 +155,9 @@ const PTS=[
 {l:"Campos Elíseos",b:"Campos Elíseos",m:"Duque de Caxias",c:"Enel",n:1,h:45,p:"bairro",f:"Entre os bairros mais afetados",q:"Avenida Actura, Campos Elíseos, Duque de Caxias, RJ",ll:[-22.7046713,-43.2769109],ok:1,ref:"Av. Actura",s:["a7"]},
 {l:"Estrada Velha do Pilar (subestação da Light)",b:"Pilar",m:"Duque de Caxias",c:"Light",n:1,h:null,p:"rua",f:"Árvore caída em frente à subestação desde 7/11",q:"Estrada Velha do Pilar, Duque de Caxias, RJ",ll:[-22.705,-43.300],s:["a2"]},
 // Nova Iguaçu
-{l:"Rua Ana Carvalho Santana, Austin",b:"Austin",m:"Nova Iguaçu",c:"Light",n:2,h:48,p:"rua",f:"Mais de dois dias sem luz e sem água; vários protocolos sem solução",q:"Rua Ana Carvalho Santana, Nova Iguaçu, RJ",ll:[-22.716,-43.522],s:["a1","a2"]},
-{l:"Cabuçu",b:"Cabuçu",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Falta de luz e de água; casa destelhada",q:"Cabuçu, Nova Iguaçu, RJ",ll:[-22.787,-43.545],s:["a2","a3"]},
-{l:"Centro",b:"Centro",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Entre os bairros mais atingidos, segundo a prefeitura",q:"Centro, Nova Iguaçu, RJ",ll:[-22.759,-43.451],s:["a3","a4"]},
+{l:"Rua Ana Carvalho Santana, Austin",b:"Austin",m:"Nova Iguaçu",c:"Light",n:2,h:48,p:"rua",f:"Mais de dois dias sem luz e sem água; Prefeitura também cita Austin entre os bairros com interrupções prolongadas (até 74 h no conjunto; duração individual não discriminada)",q:"Rua Ana Carvalho Santana, Nova Iguaçu, RJ",ll:[-22.716,-43.522],s:["a1","a2","a20"]},
+{l:"Cabuçu",b:"Cabuçu",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Falta de luz e de água; Prefeitura cita Cabuçu entre bairros com interrupções prolongadas (até 74 h no conjunto; duração individual não discriminada)",q:"Cabuçu, Nova Iguaçu, RJ",ll:[-22.787,-43.545],s:["a2","a3","a20"]},
+{l:"Centro",b:"Centro",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Entre os bairros mais atingidos; Prefeitura cita Centro entre localidades com interrupções prolongadas (até 74 h no conjunto; duração individual não discriminada)",q:"Centro, Nova Iguaçu, RJ",ll:[-22.759,-43.451],s:["a3","a4","a20"]},
 {l:"Santa Rita",b:"Santa Rita",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Entre os bairros mais atingidos, segundo a prefeitura",q:"Santa Rita, Nova Iguaçu, RJ",ll:[-22.735,-43.462],s:["a3","a4"]},
 {l:"Tinguá",b:"Tinguá",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Entre os bairros mais atingidos, segundo a prefeitura",q:"Tinguá, Nova Iguaçu, RJ",ll:[-22.598,-43.437],s:["a3","a4"]},
 {l:"Cerâmica",b:"Cerâmica",m:"Nova Iguaçu",c:"Light",n:1,h:null,p:"bairro",f:"Entre os bairros mais atingidos, segundo a prefeitura",q:"Cerâmica, Nova Iguaçu, RJ",ll:[-22.748,-43.440],s:["a3"]},

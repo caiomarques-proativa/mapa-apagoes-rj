@@ -165,9 +165,11 @@ header h1{margin:0;font:700 27px/1 "Barlow Condensed","Arial Narrow",sans-serif;
 #map .leaflet-tile-pane{filter:saturate(.42) brightness(.86) contrast(.98)}
 #map .leaflet-overlay-pane path{transition:fill-opacity .2s ease}
 
-/* Mapa vetorial exclusivo do RJ: sem qualquer camada de mapa-base */
-#map{background:#0b1d2c!important}
-#map .leaflet-tile-pane{display:none!important}
+/* Alternância entre mapa convencional e visualização municipal limpa */
+.map-mode-toggle{position:absolute;z-index:700;top:12px;right:12px;border:1px solid #45d9c5;border-radius:7px;background:#0b1d2c;color:#f3fffc;padding:9px 12px;font:600 11px 'Public Sans',sans-serif;cursor:pointer;box-shadow:0 2px 8px #0004}
+.map-mode-toggle:hover{background:#15384a}
+#map.municipal-mode{background:#0b1d2c!important}
+#map.municipal-mode .leaflet-tile-pane{display:none!important}
 #map .rj-municipality-label{background:rgba(5,22,34,.78);border:1px solid rgba(69,217,197,.55);border-radius:4px;box-shadow:none;color:#f3fffc;font:600 10px/1.2 'Public Sans',sans-serif;padding:2px 4px;white-space:nowrap}
 #map .rj-municipality-label:before{display:none}
 </style>
@@ -209,7 +211,7 @@ header h1{margin:0;font:700 27px/1 "Barlow Condensed","Arial Narrow",sans-serif;
     </div>
   </section>
   <section class="workspace">
-    <div class="map-wrap"><div id="map" role="region" aria-label="Mapa de ocorrências por rua e bairro"></div></div>
+    <div class="map-wrap"><div id="map" role="region" aria-label="Mapa de ocorrências"></div><button class="map-mode-toggle" id="mapModeToggle" type="button" aria-pressed="false" onclick="setMapMode(!municipalMode)">Ver somente municípios do RJ</button></div>
     <aside>
       
       <section class="monitor-panel"><h2 class="panel-title">Monitoramento por criticidade</h2><div class="monitor-grid"><div class="monitor-cell"><div class="monitor-ring" id="ringCrit" style="--ring:#ed3d45;--pct:0"><b id="pctCrit">0%</b></div><span>Críticos</span><small id="numCrit">0 pontos</small></div><div class="monitor-cell"><div class="monitor-ring" id="ringHigh" style="--ring:#f2ad16;--pct:0"><b id="pctHigh">0%</b></div><span>Altos</span><small id="numHigh">0 pontos</small></div><div class="monitor-cell"><div class="monitor-ring" id="ringLow" style="--ring:#1fc46b;--pct:0"><b id="pctLow">0%</b></div><span>Afetados</span><small id="numLow">0 pontos</small></div></div></section>
@@ -246,40 +248,61 @@ let st={n:1,c:"all",o:"all",m:"all",minK:0,q:"",rec:false,sel:null,r:1000};
 const BBOX=[-44.95,-23.4,-40.9,-20.7];
 
 const RJ_BOUNDS=[[-23.4,-44.95],[-20.7,-40.9]];
-const map=L.map('map',{zoomControl:true,preferCanvas:true,maxBoundsViscosity:1})
-  .fitBounds(RJ_BOUNDS,{padding:[18,18],animate:false});
-map.setMaxBounds(RJ_BOUNDS);
-map.setMinZoom(map.getBoundsZoom(RJ_BOUNDS));
-map.createPane('heatPane');
-map.getPane('heatPane').style.zIndex=350;
-
-let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,pane:'heatPane',gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
+const dark=matchMedia('(prefers-color-scheme: dark)').matches;
+const map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([-22.3,-42.6],8);
+const esri=s=>`https://server.arcgisonline.com/ArcGIS/rest/services/${s}/MapServer/tile/{z}/{y}/{x}`;
+const sat=L.tileLayer(esri('World_Imagery'),{maxZoom:19,attribution:'Imagens &copy; Esri, Maxar'}).addTo(map);
+sat.on('tileload',()=>{const w=document.getElementById('tilewarn');if(w)w.hidden=true;});
+sat.on('tileerror',()=>{const w=document.getElementById('tilewarn');if(w)w.hidden=false;});
 const municipalities=L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{
   style:{color:'#45d9c5',opacity:.98,weight:1.35,fill:true,fillColor:'#16a995',fillOpacity:.10},
   onEachFeature:(feature,layer)=>{
     if(feature.properties&&feature.properties.n){
-      layer.bindTooltip(feature.properties.n,{permanent:false,direction:'center',className:'rj-municipality-label',opacity:.98});
+      layer.bindTooltip(feature.properties.n,{permanent:true,direction:'center',className:'rj-municipality-label',opacity:.98});
     }
   }
 }).addTo(map);
-
 function updateMunicipalityLabels(){
   const zoom=map.getZoom();
   const threshold=zoom<8?2600:zoom<9?1500:zoom<10?700:zoom<11?300:0;
   municipalities.eachLayer(layer=>{
-    const tooltip=layer.getTooltip();
-    if(!tooltip)return;
     const bounds=layer.getBounds();
     const nw=map.latLngToContainerPoint(bounds.getNorthWest());
     const se=map.latLngToContainerPoint(bounds.getSouthEast());
     const pixelArea=Math.abs((se.x-nw.x)*(se.y-nw.y));
-    if(pixelArea>=threshold)layer.openTooltip();
-    else layer.closeTooltip();
+    if(pixelArea>=threshold)layer.openTooltip();else layer.closeTooltip();
   });
 }
-map.on('zoomend',updateMunicipalityLabels);
-updateMunicipalityLabels();
-
+let municipalMode=false;
+function setMapMode(enabled){
+  municipalMode=enabled;
+  const el=document.getElementById('map');
+  const btn=document.getElementById('mapModeToggle');
+  if(enabled){
+    map.removeLayer(sat);
+    el.classList.add('municipal-mode');
+    map.setMaxBounds(RJ_BOUNDS);
+    map.fitBounds(RJ_BOUNDS,{padding:[18,18],animate:false});
+    map.setMinZoom(map.getBoundsZoom(RJ_BOUNDS));
+    map.on('zoomend',updateMunicipalityLabels);
+    updateMunicipalityLabels();
+    btn.textContent='Voltar ao mapa convencional';
+    btn.setAttribute('aria-pressed','true');
+  }else{
+    map.off('zoomend',updateMunicipalityLabels);
+    municipalities.eachLayer(layer=>layer.openTooltip());
+    el.classList.remove('municipal-mode');
+    map.setMaxBounds(null);
+    map.setMinZoom(0);
+    sat.addTo(map);
+    map.setView([-22.3,-42.6],8,{animate:false});
+    btn.textContent='Ver somente municípios do RJ';
+    btn.setAttribute('aria-pressed','false');
+  }
+  setTimeout(()=>map.invalidateSize(),0);
+}
+map.on('zoomend',()=>{if(municipalMode)updateMunicipalityLabels();});
+let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);
 

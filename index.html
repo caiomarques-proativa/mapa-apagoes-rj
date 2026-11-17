@@ -250,11 +250,14 @@ const BBOX=[-44.95,-23.4,-40.9,-20.7];
 const RJ_BOUNDS=[[-23.4,-44.95],[-20.7,-40.9]];
 const dark=matchMedia('(prefers-color-scheme: dark)').matches;
 const map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([-22.3,-42.6],8);
+map.createPane('heatPane');map.getPane('heatPane').style.zIndex=350;
+map.createPane('municipalitiesPane');map.getPane('municipalitiesPane').style.zIndex=430;
 const esri=s=>`https://server.arcgisonline.com/ArcGIS/rest/services/${s}/MapServer/tile/{z}/{y}/{x}`;
 const sat=L.tileLayer(esri('World_Imagery'),{maxZoom:19,attribution:'Imagens &copy; Esri, Maxar'}).addTo(map);
 sat.on('tileload',()=>{const w=document.getElementById('tilewarn');if(w)w.hidden=true;});
 sat.on('tileerror',()=>{const w=document.getElementById('tilewarn');if(w)w.hidden=false;});
 const municipalities=L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{
+  pane:'municipalitiesPane',
   style:{color:'#45d9c5',opacity:.98,weight:1.35,fill:true,fillColor:'#16a995',fillOpacity:.10},
   onEachFeature:(feature,layer)=>{
     if(feature.properties&&feature.properties.n){
@@ -303,7 +306,7 @@ function setMapMode(enabled){
 }
 document.getElementById('mapModeToggle').addEventListener('click',()=>setMapMode(!municipalMode));
 map.on('zoomend',()=>{if(municipalMode)updateMunicipalityLabels();});
-let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
+let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,pane:'heatPane',gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);
 

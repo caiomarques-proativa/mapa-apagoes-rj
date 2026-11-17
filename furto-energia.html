@@ -93,14 +93,14 @@ function render(){
  document.getElementById('city').innerHTML='<option value="all">Todos com dados</option>'+Object.keys(series[currentPeriod]).map(n=>'<option value="'+n+'">'+n+'</option>').join('');
  document.getElementById('city').value=currentCity==='all'||Object.prototype.hasOwnProperty.call(series[currentPeriod],currentCity)?currentCity:'all';
  const vals=currentCompany==='Enel'?Object.values(values):[];
- document.querySelectorAll('.kpi b')[0].textContent=showStreetCases?'3':'—';
- document.querySelectorAll('.kpi b')[1].textContent=showStreetCases?'1':'—';
- document.querySelectorAll('.kpi span')[0].textContent='Ruas com casos divulgados';
- document.querySelectorAll('.kpi span')[1].textContent='Municípios com casos';
+ document.querySelectorAll('.kpi b')[0].textContent=showStreetCases?'9':'—';
+ document.querySelectorAll('.kpi b')[1].textContent=showStreetCases?'3':'—';
+ document.querySelectorAll('.kpi span')[0].textContent='Ligações irregulares identificadas';
+ document.querySelectorAll('.kpi span')[1].textContent='Ruas com casos divulgados';
  document.querySelector('.map-stamp').innerHTML='<b>RIO DE JANEIRO · 92 MUNICÍPIOS</b>'+(showStreetCases?'3 ruas com casos divulgados · Teresópolis':currentCompany==='Enel'?'Sem casos públicos geocodificados neste recorte':'Light · dados municipais não disponíveis');
 }
 document.getElementById('company').addEventListener('change',e=>{currentCompany=e.target.value;currentCity='all';render();});
-document.getElementById('period').addEventListener('change',e=>{currentPeriod=e.target.value;currentCity='all';render();});
+document.getElementById('period').addEventListener('change',e=>{currentPeriod=e.target.value;currentCity='all';render();if(currentCompany==='Enel'&&currentPeriod==='2026h1'){map.fitBounds(L.latLngBounds(streetCases.map(c=>[c.lat,c.lng])),{padding:[65,65],maxZoom:11});}else{map.fitBounds(layer.getBounds(),{padding:[22,22]});}});
 document.getElementById('city').addEventListener('change',e=>{currentCity=e.target.value;render();if(currentCity!=='all'){const target=layer.getLayers().find(l=>l.feature.properties.n===currentCity);if(target)map.fitBounds(target.getBounds(),{maxZoom:9,padding:[35,35]});else map.fitBounds(layer.getBounds());}else map.fitBounds(layer.getBounds(),{padding:[22,22]});});
 render();
 </script></body></html>

@@ -242,14 +242,15 @@ const esri=s=>`https://server.arcgisonline.com/ArcGIS/rest/services/${s}/MapServ
 const ruas=L.tileLayer(esri('World_Street_Map'),{maxZoom:19,attribution:'Mapa &copy; Esri, HERE, Garmin, OpenStreetMap'});
 const sat=L.layerGroup([L.tileLayer(esri('World_Imagery'),{maxZoom:19,attribution:'Imagens &copy; Esri, Maxar'}),L.tileLayer(esri('Reference/World_Transportation'),{maxZoom:19}),L.tileLayer(esri('Reference/World_Boundaries_and_Places'),{maxZoom:19})]);
 const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'});
-L.control.layers({'Ruas (Esri)':ruas,'Satélite com ruas':sat,'OpenStreetMap':osm},null,{position:'topright'}).addTo(map);
+const baseLayersControl=L.control.layers({'Ruas (Esri)':ruas,'Satélite com ruas':sat,'OpenStreetMap':osm},null,{position:'topright'}).addTo(map);
 let tileErr=0,tileOk=0;
 ruas.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});
 ruas.on('tileerror',()=>{if(++tileErr>6&&!tileOk){map.removeLayer(ruas);osm.addTo(map);}});
 osm.on('tileerror',()=>{if(!tileOk)document.getElementById('tilewarn').hidden=false;});
 osm.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});
 sat.addTo(map);sat.eachLayer(layer=>{layer.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});layer.on('tileerror',()=>{if(++tileErr>8&&!tileOk){map.removeLayer(sat);osm.addTo(map);}});});
-L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{style:{color:dark?'#6b7a84':'#7d878e',weight:1,fill:false,dashArray:'3 3'},interactive:false}).addTo(map);
+const municipalityFeatures=JSON.parse(document.getElementById('munis').textContent);
+const municipalityBorders=L.geoJSON(municipalityFeatures,{style:{color:dark?'#6b7a84':'#7d878e',weight:1,fill:false,dashArray:'3 3'},interactive:false}).addTo(map);
 let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);
@@ -262,6 +263,84 @@ const miniHeat=L.heatLayer([],{radius:17,blur:13,maxZoom:10,minOpacity:.32,gradi
 const legend=L.control({position:'bottomleft'});
 legend.onAdd=()=>{const d=L.DomUtil.create('div','legend');d.innerHTML=`<i style="background:${css('--n3')}"></i>Crítico<br><i style="background:${css('--n2')}"></i>Alto<br><i style="background:${css('--n1')}"></i>Afetado<br><i style="background:${css('--rec')}"></i>Recorrência 2026<br><i style="background:transparent;border:3px solid ${css('--n2')};box-sizing:border-box"></i>Relato de morador`;return d;};
 legend.addTo(map);
+const municipalityPopulation={};let municipalityPopulationYear=null;
+const escapeTooltip=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+function municipalityOccurrenceData(name){
+  const records=PTS.filter(p=>!p.rec&&p.m===name&&visible(p));
+  const companies=[...new Set(records.map(p=>p.c).filter(Boolean))];
+  let distributor='Sem registros para identificar';
+  if(companies.length===1)distributor=companies[0];
+  else if(companies.includes('Light')&&companies.includes('Enel'))distributor='Light / Enel — atendimento dividido';
+  else if(companies.length>1)distributor=companies.join(' / ')+' — registros múltiplos';
+  return {count:records.length,distributor};
+}
+function municipalityHeatColor(value,max){
+  if(value<=0)return '#173044';
+  const ratio=value/Math.max(1,max);
+  if(ratio<.25)return '#f8d66d';
+  if(ratio<.5)return '#f6a13a';
+  if(ratio<.75)return '#e7652d';
+  return '#c83232';
+}
+function updateMunicipalityInfoLayer(){
+  if(!municipalityInfoLayer)return;
+  const data=municipalityFeatures.features.map(feature=>municipalityOccurrenceData(feature.properties.n));
+  const max=Math.max(1,...data.map(item=>item.count));
+  municipalityInfoLayer.eachLayer(layer=>{
+    const name=layer.feature.properties.n;
+    const item=municipalityOccurrenceData(name);
+    layer.setStyle({color:'#e1eaf0',weight:1,opacity:.95,fillColor:municipalityHeatColor(item.count,max),fillOpacity:item.count ? .82 : .14});
+    const population=municipalityPopulation[name];
+    const populationText=population?population.toLocaleString('pt-BR')+' habitantes (IBGE '+municipalityPopulationYear+')':'Não disponível';
+    layer.setTooltipContent('<strong>'+escapeTooltip(name)+'</strong><br>População: '+populationText+'<br>Ocorrências: '+item.count+'<br>Distribuidora: '+escapeTooltip(item.distributor));
+  });
+}
+const municipalityInfoLayer=L.geoJSON(municipalityFeatures,{
+  style:feature=>({color:'#e1eaf0',weight:1,opacity:.95,fillColor:'#173044',fillOpacity:.14}),
+  onEachFeature:(feature,layer)=>{
+    const name=feature.properties.n;
+    layer.bindTooltip('<strong>'+escapeTooltip(name)+'</strong><br>Carregando dados…',{sticky:true,direction:'auto',className:'muni-info-tooltip'});
+    layer.on('mouseover',()=>layer.setStyle({weight:2.2,color:'#fff',fillOpacity:.94}));
+    layer.on('mouseout',()=>layer.setStyle({weight:1,color:'#e1eaf0'}));
+  }
+});
+baseLayersControl.addBaseLayer(municipalityInfoLayer,'RJ — calor + informações ao passar o mouse');
+let municipalityMode=false,normalMapView=null;
+map.on('baselayerchange',event=>{
+  const entering=event.layer===municipalityInfoLayer;
+  if(entering&&!municipalityMode){
+    normalMapView={center:map.getCenter(),zoom:map.getZoom()};
+    municipalityMode=true;
+    [heat,markers,rings,municipalityBorders].forEach(layer=>{if(map.hasLayer(layer))map.removeLayer(layer);});
+    legend.remove();
+    map.setMaxBounds(RJ_BOUNDS);
+    map.fitBounds(RJ_BOUNDS,{padding:[8,8]});
+  }else if(!entering&&municipalityMode){
+    municipalityMode=false;
+    map.setMaxBounds(null);
+    [heat,markers,rings,municipalityBorders].forEach(layer=>{if(!map.hasLayer(layer))layer.addTo(map);});
+    legend.addTo(map);
+    if(normalMapView)map.setView(normalMapView.center,normalMapView.zoom);
+  }
+});
+async function loadMunicipalityPopulation(){
+  for(const year of [2026,2025]){
+    try{
+      const response=await fetch('https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2033/v/9324/p/'+year);
+      if(!response.ok)continue;
+      const rows=await response.json();
+      rows.slice(1).forEach(row=>{
+        const name=String(row.D1N||'').replace(/\\s*\\(RJ\\)$/i,'').trim();
+        const value=Number(String(row.V||'').replace(/\\./g,''));
+        if(name&&Number.isFinite(value)&&value>0)municipalityPopulation[name]=value;
+      });
+      if(Object.keys(municipalityPopulation).length){municipalityPopulationYear=year;break;}
+    }catch(error){}
+  }
+  updateMunicipalityInfoLayer();
+}
+loadMunicipalityPopulation();
+
 
 function visible(p){
   if(p.rec&&!st.rec)return false;
@@ -314,6 +393,7 @@ function render(){
     p._mk=mk;markers.addLayer(mk);
   });
   heat.setLatLngs(vis.filter(p=>!p.rec).map(p=>[p.ll[0],p.ll[1],(p.n===3?1:p.n===2?.65:.35)*(p.o==='relato'?.8:1)]));
+  updateMunicipalityInfoLayer();
   const heatPoints=vis.filter(p=>!p.rec).map(p=>[p.ll[0],p.ll[1],(p.n===3?1:p.n===2?.72:.48)*(p.o==='relato'?.9:1)]);
   miniHeat.setLatLngs(heatPoints);
   renderAnalytics(vis);

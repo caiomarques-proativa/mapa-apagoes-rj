@@ -281,7 +281,7 @@ function buildMunicipalityLayers(){
   const max=Math.max(1,...stats.map(s=>s.count));
   munFeatures.forEach((feature,index)=>{
     const name=feature.properties.n,stt=stats[index],population=munPopulation[name];
-    const style={color:'#dce8ed',weight:.75,opacity:.9,fillColor:heatColor(stt.count,max),fillOpacity:stt.count?.78:.12};
+    const style={color:'#dce8ed',weight:.75,opacity:.9,fillColor:heatColor(stt.count,max),fillOpacity:stt.count ? .78 : .12};
     L.geoJSON(feature,{style,interactive:false}).addTo(heatNoNames);
     L.geoJSON(feature,{style:{...style,weight:1.1},onEachFeature:(f,l)=>{
       const pop=population?population.toLocaleString('pt-BR')+' (IBGE '+populationYear+')':'Não disponível';

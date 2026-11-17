@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Apagão 7/11 no RJ</title>
+<title>Vigilantes da Luz | Inteligência territorial</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -14,19 +14,72 @@ main{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0;min-width:0
 .workspace{display:grid;grid-template-columns:minmax(0,1fr) 350px;min-height:0}.map-wrap{position:relative;min-height:420px;min-width:0}#map{height:100%;position:absolute;inset:0;min-height:420px;background:var(--panel)}aside{border-left:1px solid var(--rule);display:flex;flex-direction:column;min-height:0}.list-head{padding:12px 14px 9px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:baseline;gap:8px}.list-head strong{font-size:13px}.list-head span{font-size:11px;color:var(--ink-2)}.list{overflow:auto;flex:1;padding:0 0 16px}.grp{border-bottom:1px solid var(--rule);background:#fff}.grp summary{list-style:none;cursor:pointer;padding:10px 13px;display:flex;justify-content:space-between;align-items:center;gap:8px;font:600 16px "Barlow Condensed",sans-serif}.grp summary::-webkit-details-marker{display:none}.grp summary:after{content:"＋";font:600 14px "Public Sans",sans-serif;color:var(--ink-2);order:3}.grp[open] summary:after{content:"−"}.grp summary:hover{background:#f2f6f8}.grp summary span{min-width:0}.grp small{font:400 11px "Public Sans",sans-serif;color:var(--ink-2);white-space:nowrap;margin-left:auto}.grp .item{padding-left:18px}.item{display:grid;grid-template-columns:10px 1fr;gap:9px;padding:9px 13px;cursor:pointer;border-top:1px solid var(--rule)}.item:hover,.item.sel{background:#f2f6f8}.dot{width:10px;height:10px;border-radius:50%;margin-top:4px}.item h3{margin:0;font-size:12.5px;font-weight:650;line-height:1.3}.item p{margin:2px 0 0;font-size:11px;color:var(--ink-2)}.tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px}.tags span{font-size:10px;border:1px solid var(--rule);border-radius:999px;padding:1px 6px;color:var(--ink-2)}.tags .lvl{color:#fff;border:0}.links{display:flex;gap:10px;margin-top:5px;font-size:11px}.links a{color:var(--ink)}.legend{background:#fff;color:var(--ink);border:1px solid var(--rule);border-radius:7px;padding:7px 9px;font:11px "Public Sans",sans-serif;line-height:1.65}.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}.leaflet-popup-content{font:12px/1.45 "Public Sans",sans-serif;margin:10px 12px}.leaflet-popup-content h3{font:600 16px "Barlow Condensed",sans-serif;margin:0 0 2px}.tilewarn{position:absolute;top:10px;left:56px;right:10px;z-index:500;background:#fff;border:1px solid var(--n3);border-left:4px solid var(--n3);border-radius:6px;padding:8px 12px;font-size:12px}.note{padding:9px 13px;font-size:11px;color:var(--ink-2);border-top:1px solid var(--rule);max-height:28vh;overflow:auto}.note summary{cursor:pointer;font-weight:650;color:var(--ink)}table#ramun td,table#ramun th{padding:3px 4px;border-bottom:1px solid var(--rule);text-align:right}table#ramun td:first-child,table#ramun th:first-child{text-align:left}.export{margin-left:auto}.export summary{font-size:11px;color:var(--ink-2);cursor:pointer}.export .export-actions{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
 @media(max-width:1050px){.filter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.workspace{grid-template-columns:minmax(0,1fr) 320px}}
 @media(max-width:760px){body{height:auto;min-height:100vh;grid-template-rows:auto auto}header{padding:12px;gap:12px}h1{font-size:25px}.kpis{width:100%;margin:0;justify-content:space-between;gap:8px}.kpis div{text-align:left}.kpis b{font-size:22px}.filters{padding:10px 12px}.filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workspace{grid-template-columns:1fr;grid-template-rows:55vh auto}.map-wrap{min-height:360px}aside{border-left:0;border-top:1px solid var(--rule);max-height:55vh}.note{max-height:24vh}}
+
+/* Identidade visual executiva — Vigilantes da Luz */
+:root{--bg:#fff;--panel:#f3f6f8;--ink:#102b3c;--ink-2:#647887;--rule:#dce5ea;--focus:#168b83;--n1:#e6a52e;--n2:#dc641f;--n3:#a51f23;--rec:#4f6d8a}
+body{background:#eef2f4}
+header{background:linear-gradient(112deg,#102b3c 0%,#173f50 68%,#145b60 100%);color:#fff;padding:20px 26px 18px;gap:28px;border:0;box-shadow:0 3px 14px #102b3c18}
+.brand{display:flex;align-items:center;gap:14px;min-width:300px}
+.brand-mark{width:48px;height:48px;flex:0 0 48px;border:1px solid #8bc7c1;border-radius:14px;display:grid;place-items:center;background:#ffffff12;box-shadow:inset 0 0 0 4px #ffffff08}
+.brand-mark span{font:700 19px "Barlow Condensed",sans-serif;letter-spacing:-.04em;color:#b7e5dc}
+.brand-copy{min-width:0}
+.eyebrow{font-size:9px;font-weight:700;letter-spacing:.18em;color:#9dd4cc;margin-bottom:3px}
+h1{font:700 32px/1 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.01em;color:#fff}
+.sub{font-size:12px;color:#d1e0e5;margin:5px 0 0;max-width:68ch}
+.header-meta{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:9px;font-weight:600;letter-spacing:.09em;color:#a9c4cc}
+.header-meta i{height:3px;width:3px;border-radius:50%;background:#6caaa5}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#7ed4a5;box-shadow:0 0 0 3px #7ed4a522}
+.kpis{gap:9px;align-items:stretch}
+.kpis div{min-width:94px;text-align:left;padding:11px 13px;border:1px solid #ffffff24;border-radius:10px;background:#ffffff0d}
+.kpis b{font:700 27px/1 "Barlow Condensed",sans-serif;color:#fff}
+.kpis span{display:block;margin-top:5px;font-size:9px;line-height:1.25;color:#c5d7dc;letter-spacing:.02em}
+.kpis .kpi-critical{background:#a51f2330;border-color:#e58c8c66}
+main{background:#eef2f4;gap:0}
+.filters{margin:12px 12px 0;padding:13px 16px;background:#fff;border:1px solid var(--rule);border-radius:12px 12px 0 0;box-shadow:0 2px 8px #102b3c08}
+.filter-head strong{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:#24485a}
+.filter-head span{font-weight:600;color:#3c6976}
+.field label{font-size:10px;letter-spacing:.025em}
+select,input[type=search]{border-color:#d5e0e5;border-radius:8px;background:#fbfcfd}
+.btn{border-radius:8px}
+.btn:not(.ghost){background:#145b60;border-color:#145b60}
+.btn.ghost{border-color:#d4e0e5}
+.workspace{margin:0 12px 12px;border:1px solid var(--rule);border-top:0;border-radius:0 0 12px 12px;overflow:hidden;background:#fff;box-shadow:0 4px 14px #102b3c0a}
+aside{background:#fff}
+.list-head{padding:14px 15px 11px;background:#f8fafb}
+.list-head strong{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#24485a}
+.list-head span{font-weight:600}
+.grp summary{padding:11px 14px}
+.grp summary span{font-size:17px}
+.grp[open] summary{background:#f3f8f8;color:#145b60}
+.item{padding-top:10px;padding-bottom:10px}
+.note{background:#fbfcfd}
+.leaflet-control-zoom a{color:#173b4c!important}
+@media(max-width:1050px){header{align-items:flex-start}.kpis{flex-wrap:wrap}.kpis div{min-width:80px}.brand{flex:1}}
+@media(max-width:760px){header{padding:15px;gap:14px}.brand{min-width:0}.brand-mark{width:40px;height:40px;flex-basis:40px}h1{font-size:28px}.header-meta{font-size:8px;flex-wrap:wrap}.kpis{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.kpis div{text-align:left}.filters{margin:8px 8px 0}.workspace{margin:0 8px 8px}.filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 </style>
 </head>
 <body>
 <header>
-  <div>
-    <h1>Pontos críticos do apagão de 7/11 no estado do Rio, por rua e bairro</h1>
-    <p class="sub">Atualizado em 16/11/2026. Cada ponto é um local citado pela imprensa ou prefeituras (círculo cheio) ou por moradores em reclamações públicas no Reclame Aqui (anel), entre 7 e 16/11. Estado inteiro: Light e Enel Rio (a Energisa, na região de Nova Friburgo, não teve relatos ligados ao temporal).</p>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true"><span>VL</span></div>
+    <div class="brand-copy">
+      <div class="eyebrow">INTELIGÊNCIA TERRITORIAL · ENERGIA</div>
+      <h1>Vigilantes da Luz</h1>
+      <p class="sub">Monitoramento de ocorrências, criticidade e concentração territorial no estado do Rio de Janeiro.</p>
+      <div class="header-meta"><span class="live-dot"></span> PAINEL EXECUTIVO <i></i> POSIÇÃO EM 17 NOV 2026 <i></i> BASE CONSOLIDADA ATÉ 16 NOV</div>
+    </div>
   </div>
-  <div class="kpis"><div><b id="k3">0</b><span>pontos críticos</span></div><div><b id="kt">0</b><span>pontos no mapa</span></div><div><b id="kr">0</b><span>relatos de moradores</span></div><div><b id="km">0</b><span>municípios</span></div></div>
+  <div class="kpis">
+    <div class="kpi-critical"><b id="k3">0</b><span>pontos críticos</span></div>
+    <div><b id="kt">0</b><span>pontos mapeados</span></div>
+    <div><b id="kr">0</b><span>relatos de moradores</span></div>
+    <div><b id="km">0</b><span>municípios</span></div>
+  </div>
 </header>
 <main>
   <section class="filters" aria-label="Filtros do mapa">
-    <div class="filter-head"><strong>Explore os pontos por perfil de ocorrência</strong><span id="filterCount">Carregando pontos…</span></div>
+    <div class="filter-head"><strong>Exploração territorial</strong><span id="filterCount">Carregando pontos…</span></div>
     <div class="filter-grid">
       <div class="field"><label for="municipio">Município</label><select id="municipio"><option value="all">Todos os municípios</option></select></div>
       <div class="field"><label for="distribuidora">Distribuidora</label><select id="distribuidora"><option value="all">Todas</option><option value="Light">Light</option><option value="Enel">Enel</option></select></div>
@@ -46,7 +99,7 @@ main{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0;min-width:0
   <section class="workspace">
     <div class="map-wrap"><div id="map" role="region" aria-label="Mapa de ocorrências por rua e bairro"></div><div id="tilewarn" class="tilewarn" hidden>O mapa de ruas não carregou. Verifique a conexão com a internet.</div></div>
     <aside>
-      <div class="list-head"><strong>Locais encontrados</strong><span id="listCount">—</span></div>
+      <div class="list-head"><strong>Ocorrências por município</strong><span id="listCount">—</span></div>
       <div class="list" id="list"></div>
       <div class="note">
         <details><summary>Critérios e observações</summary>

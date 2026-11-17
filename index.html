@@ -271,7 +271,7 @@ function render(){
   }).join(''):'<p class="note">Nenhum ponto com esses filtros. Tente baixar o nível mínimo ou limpar a busca.</p>';
   const byLevel=[{label:'Crítico',value:vis.filter(p=>!p.rec&&p.n===3).length,color:'#e0444e'},{label:'Alto',value:vis.filter(p=>!p.rec&&p.n===2).length,color:'#f18435'},{label:'Afetado',value:vis.filter(p=>!p.rec&&p.n===1).length,color:'#eab449'},{label:'Recorrência',value:vis.filter(p=>p.rec).length,color:'#6b8eae'}];
   const bySource=[{label:'Imprensa / poder público',value:vis.filter(p=>p.o!=='relato'&&!p.rec).length},{label:'Relatos de moradores',value:vis.filter(p=>p.o==='relato').length}];
-  const topCities=order.slice(0,6).map(([label,ps])=>({label,value:ps.length}));
+  const topCities=Object.entries(vis.reduce((acc,p)=>{acc[p.m]=(acc[p.m]||0)+1;return acc;},{})).map(([label,value])=>({label,value})).sort((a,b)=>b.value-a.value).slice(0,6);
   function bars(id,data){const el=document.getElementById(id);if(!el)return;const max=Math.max(1,...data.map(d=>d.value));el.innerHTML=data.map(d=>'<div class="bar-row"><span class="bar-label" title="'+d.label+'">'+d.label+'</span><div class="bar-track"><div class="bar-fill" style="width:'+(d.value/max*100)+'%;'+(d.color?'background:'+d.color:'')+'"></div></div><b>'+d.value+'</b></div>').join('')||'<span class="bar-label">Sem dados para os filtros atuais</span>';}
   bars('chartSeverity',byLevel);bars('chartSource',bySource);bars('chartMunicipality',topCities);
   const verified=vis.filter(p=>p.ok).length,residents=vis.filter(p=>p.o==='relato').reduce((a,p)=>a+(p.k||1),0),cities=new Set(vis.map(p=>p.m)).size;

@@ -144,7 +144,7 @@ function render(){
         <div><h3>${p.l}</h3><p>${p.f}</p>
           <div class="tags">${p.rec?'<span>recorrência</span>':`<span class="lvl" style="background:${col(p)}">${LV[p.n][0]}</span>`}${p.h?`<span>${p.h} h sem luz</span>`:''}<span>${p.o==='relato'?'morador':'imprensa'}</span><span>${PREC[p.p]}</span><span>${p.c}</span><span>${p.ok?'posição conferida':'aguardando conferência'}</span></div>
           <p>${p.end?p.end+'<br>':''}${p.ll[0].toFixed(5)}, ${p.ll[1].toFixed(5)}</p><div class="links"><a href="${gmaps(p)}" target="_blank" rel="noopener">Google Maps</a><a href="${SRC[p.s[0]][1]}" target="_blank" rel="noopener">Fonte</a></div>
-        </div></div>`).join('');+`</details>`
+        </div></div>`).join('')+`</details>`
   }).join(''):'<p class="note">Nenhum ponto com esses filtros. Tente baixar o nível mínimo ou limpar a busca.</p>';
   document.querySelectorAll('.item').forEach(el=>{
     el.onclick=e=>{if(e.target.tagName!=='A')select(+el.dataset.id,true);};

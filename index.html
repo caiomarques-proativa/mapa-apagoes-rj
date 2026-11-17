@@ -164,6 +164,11 @@ header h1{margin:0;font:700 27px/1 "Barlow Condensed","Arial Narrow",sans-serif;
 /* Destaque territorial do RJ: base menos saturada e municípios fluminenses realçados */
 #map .leaflet-tile-pane{filter:saturate(.42) brightness(.86) contrast(.98)}
 #map .leaflet-overlay-pane path{transition:fill-opacity .2s ease}
+
+/* Mapa focado exclusivamente no RJ: sem nomes, vias ou hidrografia de estados vizinhos */
+#map .leaflet-tile-pane{filter:none}
+#map .rj-municipality-label{background:rgba(5,22,34,.78);border:1px solid rgba(69,217,197,.55);border-radius:4px;box-shadow:none;color:#f3fffc;font:600 10px/1.2 'Public Sans',sans-serif;padding:2px 4px;white-space:nowrap}
+#map .rj-municipality-label:before{display:none}
 </style>
 </head>
 <body>
@@ -242,17 +247,18 @@ const BBOX=[-44.95,-23.4,-40.9,-20.7];
 const dark=matchMedia('(prefers-color-scheme: dark)').matches;
 const map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([-22.3,-42.6],8);
 const esri=s=>`https://server.arcgisonline.com/ArcGIS/rest/services/${s}/MapServer/tile/{z}/{y}/{x}`;
-const ruas=L.tileLayer(esri('World_Street_Map'),{maxZoom:19,attribution:'Mapa &copy; Esri, HERE, Garmin, OpenStreetMap'});
-const sat=L.layerGroup([L.tileLayer(esri('World_Imagery'),{maxZoom:19,attribution:'Imagens &copy; Esri, Maxar'}),L.tileLayer(esri('Reference/World_Transportation'),{maxZoom:19}),L.tileLayer(esri('Reference/World_Boundaries_and_Places'),{maxZoom:19})]);
-const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'});
-L.control.layers({'Ruas (Esri)':ruas,'Satélite com ruas':sat,'OpenStreetMap':osm},null,{position:'topright'}).addTo(map);
-let tileErr=0,tileOk=0;
-ruas.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});
-ruas.on('tileerror',()=>{if(++tileErr>6&&!tileOk){map.removeLayer(ruas);osm.addTo(map);}});
-osm.on('tileerror',()=>{if(!tileOk)document.getElementById('tilewarn').hidden=false;});
-osm.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});
-sat.addTo(map);sat.eachLayer(layer=>{layer.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});layer.on('tileerror',()=>{if(++tileErr>8&&!tileOk){map.removeLayer(sat);osm.addTo(map);}});});
-L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{style:{color:'#45d9c5',opacity:.92,weight:1.15,fill:true,fillColor:'#16a995',fillOpacity:.15},interactive:false}).addTo(map);
+const sat=L.tileLayer(esri('World_Imagery'),{maxZoom:19,attribution:'Imagens &copy; Esri, Maxar'});
+sat.addTo(map);
+sat.on('tileload',()=>{document.getElementById('tilewarn').hidden=true;});
+sat.on('tileerror',()=>{document.getElementById('tilewarn').hidden=false;});
+L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{
+  style:{color:'#45d9c5',opacity:.98,weight:1.35,fill:true,fillColor:'#16a995',fillOpacity:.13},
+  onEachFeature:(feature,layer)=>{
+    if(feature.properties&&feature.properties.n){
+      layer.bindTooltip(feature.properties.n,{permanent:true,direction:'center',className:'rj-municipality-label',opacity:.95});
+    }
+  }
+}).addTo(map);
 let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);

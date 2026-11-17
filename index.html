@@ -135,26 +135,17 @@ aside .list{min-height:70px;flex:1}
 @media(max-width:1100px){main{grid-template-columns:160px minmax(0,1fr);grid-template-rows:110px minmax(340px,1fr) 195px}.workspace{grid-template-columns:minmax(0,1fr) 260px}.analytics{gap:6px;padding:6px}.chart-card{padding:8px}.donut{width:82px;height:82px;flex-basis:82px}.donut:after{inset:20px}}
 @media(max-width:760px){body{height:auto;min-height:100vh;overflow:auto;grid-template-rows:auto auto}header{height:auto;min-height:0;flex-wrap:wrap;align-items:flex-start;padding:14px}.kpis{width:100%;flex-wrap:wrap}.kpis div{flex:1;min-width:calc(50% - 8px)}main{height:auto;min-height:0;overflow:visible;grid-template-columns:1fr;grid-template-rows:auto auto minmax(480px,60vh) auto}.app-rail{display:none}.filters{grid-column:1;grid-row:1}.workspace{grid-column:1;grid-row:2;grid-template-columns:1fr;grid-template-rows:55vh auto}.map-wrap{min-height:360px}#map{min-height:360px}.workspace aside{max-height:none}.analytics{grid-column:1;grid-row:3;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px;overflow:visible}.monitor-ring{width:48px;height:48px}}
 
+
+/* Cabeçalho minimalista: somente o título */
+body{grid-template-rows:66px minmax(0,1fr)}
+header{height:66px;min-height:66px;padding:0 22px;background:#091a29;border:0;border-bottom:1px solid #20394b;box-shadow:none;display:flex;align-items:center;justify-content:flex-start;gap:0;flex-wrap:nowrap}
+header h1{margin:0;font:700 27px/1 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.01em;color:#f2f7fa}
+@media(max-width:760px){body{grid-template-rows:58px auto}header{height:58px;min-height:58px;padding:0 14px}header h1{font-size:24px}}
+
 </style>
 </head>
 <body>
-<header>
-  <div class="brand">
-    <div class="brand-mark" aria-hidden="true"><span>VL</span></div>
-    <div class="brand-copy">
-      <div class="eyebrow">INTELIGÊNCIA TERRITORIAL · ENERGIA</div>
-      <h1>Vigilantes da Luz</h1>
-      <p class="sub">Monitoramento de ocorrências, criticidade e concentração territorial no estado do Rio de Janeiro.</p>
-      <div class="header-meta"><span class="live-dot"></span> PAINEL EXECUTIVO <i></i> POSIÇÃO EM 17 NOV 2026 <i></i> BASE CONSOLIDADA ATÉ 16 NOV</div>
-    </div>
-  </div>
-  <div class="kpis">
-    <div class="kpi-critical"><b id="k3">0</b><span>pontos críticos</span></div>
-    <div><b id="kt">0</b><span>pontos mapeados</span></div>
-    <div><b id="kr">0</b><span>relatos de moradores</span></div>
-    <div><b id="km">0</b><span>municípios</span></div>
-  </div>
-</header>
+<header aria-label="Título do painel"><h1>Vigilantes da Luz</h1></header>
 <main>
   <aside class="app-rail" aria-label="Navegação e legenda">
     <div class="rail-brand"><div class="rail-logo">VL</div><div><b>VIGILANTES</b><small>DA LUZ · RJ</small></div></div>
@@ -243,7 +234,9 @@ L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{style:{color
 let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);
-const miniMap=L.map('heatmapMini',{zoomControl:false,attributionControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false}).setView([-22.65,-43.1],7);
+const RJ_BOUNDS=[[-23.4,-44.95],[-20.7,-40.9]];
+const miniMap=L.map('heatmapMini',{zoomControl:false,attributionControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,zoomSnap:0.1,minZoom:5,maxZoom:7}).fitBounds(RJ_BOUNDS,{padding:[3,3],animate:false});
+miniMap.setMaxBounds(RJ_BOUNDS);
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:12}).addTo(miniMap);
 const miniHeat=L.heatLayer([],{radius:17,blur:13,maxZoom:10,minOpacity:.32,gradient:{.25:'#2d70b7',.5:'#f4d34f',.72:'#f27b27',.9:'#e52c24',1:'#8f142b'}}).addTo(miniMap);
 

@@ -161,6 +161,9 @@ header h1{margin:0;font:700 27px/1 "Barlow Condensed","Arial Narrow",sans-serif;
   .workspace{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:minmax(360px,1fr)!important}
 }
 
+/* Destaque territorial do RJ: base menos saturada e municípios fluminenses realçados */
+#map .leaflet-tile-pane{filter:saturate(.42) brightness(.86) contrast(.98)}
+#map .leaflet-overlay-pane path{transition:fill-opacity .2s ease}
 </style>
 </head>
 <body>
@@ -249,7 +252,7 @@ ruas.on('tileerror',()=>{if(++tileErr>6&&!tileOk){map.removeLayer(ruas);osm.addT
 osm.on('tileerror',()=>{if(!tileOk)document.getElementById('tilewarn').hidden=false;});
 osm.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});
 sat.addTo(map);sat.eachLayer(layer=>{layer.on('tileload',()=>{tileOk++;document.getElementById('tilewarn').hidden=true;});layer.on('tileerror',()=>{if(++tileErr>8&&!tileOk){map.removeLayer(sat);osm.addTo(map);}});});
-L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{style:{color:dark?'#6b7a84':'#7d878e',weight:1,fill:false,dashArray:'3 3'},interactive:false}).addTo(map);
+L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{style:{color:'#45d9c5',opacity:.92,weight:1.15,fill:true,fillColor:'#16a995',fillOpacity:.15},interactive:false}).addTo(map);
 let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);

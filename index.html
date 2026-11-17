@@ -266,7 +266,7 @@ legend.addTo(map);
 const municipalityPopulation={};let municipalityPopulationYear=null;
 const escapeTooltip=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 function municipalityOccurrenceData(name){
-  const records=PTS.filter(p=>!p.rec&&p.m===name&&visible(p));
+  const records=PTS.filter(p=>p.m===name&&visible(p));
   const companies=[...new Set(records.map(p=>p.c).filter(Boolean))];
   let distributor='Sem registros para identificar';
   if(companies.length===1)distributor=companies[0];

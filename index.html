@@ -330,8 +330,8 @@ async function loadMunicipalityPopulation(){
       if(!response.ok)continue;
       const rows=await response.json();
       rows.slice(1).forEach(row=>{
-        const name=String(row.D1N||'').replace(/\\s*\\(RJ\\)$/i,'').trim();
-        const value=Number(String(row.V||'').replace(/\\./g,''));
+        const name=String(row.D1N||'').replace(/\s*\(RJ\)$/i,'').trim();
+        const value=Number(String(row.V||'').replace(/\./g,''));
         if(name&&Number.isFinite(value)&&value>0)municipalityPopulation[name]=value;
       });
       if(Object.keys(municipalityPopulation).length){municipalityPopulationYear=year;break;}

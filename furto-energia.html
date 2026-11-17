@@ -52,7 +52,13 @@ const series={
  "2025":{"Duque de Caxias":36.34,"São Gonçalo":32.09,"Araruama":23.97,"Cabo Frio":21.92,"Angra dos Reis":19.34,"Niterói":19.21,"Campos dos Goytacazes":15.51,"Macaé":8.42,"Itaperuna":4.68,"Teresópolis":3.75},
  "2026h1":{"Duque de Caxias":35.36,"São Gonçalo":34.61,"Araruama":22.72,"Cabo Frio":21.89,"Campos dos Goytacazes":19.75,"Niterói":13.78,"Angra dos Reis":13.30,"Itaperuna":11.61,"Macaé":9.01,"Teresópolis":4.54}
 };
-const streetCases=[\n {street:"Rua Juiz Alberto Nader",lat:-22.3982374,lng:-42.9799817,count:6,city:"Teresópolis",date:"30/06/2026",detail:"Seis ligações diretas identificadas em uma pousada. O número do imóvel não foi divulgado.",geo:"Centro aproximado do logradouro; não representa o imóvel fiscalizado."},\n {street:"Rua Sloper",lat:-22.4428516,lng:-42.9780993,count:2,city:"Teresópolis",date:"30/06/2026",detail:"Duas ligações diretas identificadas em um bar e restaurante. O número do imóvel não foi divulgado.",geo:"Centro aproximado do logradouro; não representa o imóvel fiscalizado."},\n {street:"Rua Fernando Martins",lat:-22.4087893,lng:-42.9695231,count:1,city:"Teresópolis",date:"30/06/2026",detail:"Uma ligação direta identificada em um estúdio de tatuagem. O número do imóvel não foi divulgado.",geo:"Centro aproximado do logradouro; não representa o imóvel fiscalizado."}\n];\nconst streetSource="https://www.enel.com.br/pt/midia/press/d202607-enel-rio-remove-furto-de-energia-em-teresopolis.html";\nconst map=L.map('map',{zoomControl:true,scrollWheelZoom:true,preferCanvas:true,zoomSnap:.25});
+const streetCases=[
+ {street:"Rua Juiz Alberto Nader",lat:-22.3982374,lng:-42.9799817,count:6,city:"Teresópolis",date:"30/06/2026",detail:"Seis ligações diretas identificadas em uma pousada. O número do imóvel não foi divulgado.",geo:"Centro aproximado do logradouro; não representa o imóvel fiscalizado."},
+ {street:"Rua Sloper",lat:-22.4428516,lng:-42.9780993,count:2,city:"Teresópolis",date:"30/06/2026",detail:"Duas ligações diretas identificadas em um bar e restaurante. O número do imóvel não foi divulgado.",geo:"Centro aproximado do logradouro; não representa o imóvel fiscalizado."},
+ {street:"Rua Fernando Martins",lat:-22.4087893,lng:-42.9695231,count:1,city:"Teresópolis",date:"30/06/2026",detail:"Uma ligação direta identificada em um estúdio de tatuagem. O número do imóvel não foi divulgado.",geo:"Centro aproximado do logradouro; não representa o imóvel fiscalizado."}
+];
+const streetSource="https://www.enel.com.br/pt/midia/press/d202607-enel-rio-remove-furto-de-energia-em-teresopolis.html";
+const map=L.map('map',{zoomControl:true,scrollWheelZoom:true,preferCanvas:true,zoomSnap:.25});
 let currentCompany='Enel',currentPeriod='2025',currentCity='all';
 const layer=L.geoJSON(geo,{style:feature=>styleFeature(feature),onEachFeature:(feature,featureLayer)=>{
  featureLayer.on('mouseover',()=>featureLayer.setStyle({weight:1.8,color:'#8ce4d1'}));
@@ -62,8 +68,12 @@ const layer=L.geoJSON(geo,{style:feature=>styleFeature(feature),onEachFeature:(f
 }});
 function valueFor(name){return currentCompany==='Enel'?series[currentPeriod][name]:undefined}
 function styleFeature(f){const v=valueFor(f.properties.n);return{color:v===undefined?'#31596b':'#6c8795',weight:.8,opacity:.95,fillColor:v===undefined?'#102638':v>=30?'#c9474f':v>=20?'#e77a3d':v>=12?'#e6ad48':'#3cae9b',fillOpacity:v===undefined?.18:.78};}
-layer.addTo(map);map.fitBounds(layer.getBounds(),{padding:[22,22]});map.setMaxBounds(layer.getBounds().pad(.08));L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);\nconst streetLayer=L.layerGroup().addTo(map);\nstreetCases.forEach(c=>{const marker=L.circleMarker([c.lat,c.lng],{radius:7,color:'#fff1bd',weight:2,fillColor:'#ffbf3f',fillOpacity:1}).addTo(streetLayer);marker.bindPopup('<b>'+c.street+'</b><br>'+c.city+' · '+c.date+'<br><strong>'+c.count+' ligação(ões) clandestina(s) identificada(s)</strong><br>'+c.detail+'<br><small>'+c.geo+'</small><br><a href="'+streetSource+'" target="_blank" rel="noopener">Fonte: Enel Rio ↗</a>');marker.on('click',()=>map.flyTo([c.lat,c.lng],14,{duration:.7}));});
+layer.addTo(map);map.fitBounds(layer.getBounds(),{padding:[22,22]});map.setMaxBounds(layer.getBounds().pad(.08));L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);
+const streetLayer=L.layerGroup().addTo(map);
+streetCases.forEach(c=>{const marker=L.circleMarker([c.lat,c.lng],{radius:7,color:'#fff1bd',weight:2,fillColor:'#ffbf3f',fillOpacity:1}).addTo(streetLayer);marker.bindPopup('<b>'+c.street+'</b><br>'+c.city+' · '+c.date+'<br><strong>'+c.count+' ligação(ões) clandestina(s) identificada(s)</strong><br>'+c.detail+'<br><small>'+c.geo+'</small><br><a href="'+streetSource+'" target="_blank" rel="noopener">Fonte: Enel Rio ↗</a>');marker.on('click',()=>map.flyTo([c.lat,c.lng],14,{duration:.7}));});
 function render(){
+ const showStreetCases=currentCompany==='Enel'&&currentPeriod==='2026h1';
+ if(showStreetCases){streetLayer.addTo(map);document.getElementById('streetCases').style.display='block';document.getElementById('streetCaseList').innerHTML=streetCases.map(c=>'<div class="case-row"><b>'+c.street+'</b><span>'+c.count+' ligação(ões) identificada(s)</span><br>'+c.city+' · operação de '+c.date+'<br><a href="'+streetSource+'" target="_blank" rel="noopener">Ver fonte oficial ↗</a></div>').join('');}else{map.removeLayer(streetLayer);document.getElementById('streetCases').style.display='none';}
  const values=series[currentPeriod],available=currentCompany==='Enel'?Object.entries(values).filter(([n])=>currentCity==='all'||n===currentCity):[];
  layer.setStyle(styleFeature);
  layer.eachLayer(l=>{const n=l.feature.properties.n,v=valueFor(n);l.setTooltipContent(v===undefined?'<b>'+n+'</b><br>Sem indicador municipal publicado': '<b>'+n+'</b><br>Perdas não técnicas: <strong>'+v.toFixed(2).replace('.',',')+'%</strong><br>'+ (currentPeriod==='2025'?'Ano de 2025':'1º semestre de 2026'));});
@@ -83,11 +93,11 @@ function render(){
  document.getElementById('city').innerHTML='<option value="all">Todos com dados</option>'+Object.keys(series[currentPeriod]).map(n=>'<option value="'+n+'">'+n+'</option>').join('');
  document.getElementById('city').value=currentCity==='all'||Object.prototype.hasOwnProperty.call(series[currentPeriod],currentCity)?currentCity:'all';
  const vals=currentCompany==='Enel'?Object.values(values):[];
- document.querySelectorAll('.kpi b')[0].textContent=currentCompany==='Enel'?'10':'—';
- document.querySelectorAll('.kpi b')[1].textContent=currentCompany==='Enel'?'10':'—';
- document.querySelectorAll('.kpi span')[0].textContent='Municípios com indicador';
- document.querySelectorAll('.kpi span')[1].textContent='Municípios no ranking';
- document.querySelector('.map-stamp').innerHTML='<b>RIO DE JANEIRO · 92 MUNICÍPIOS</b>'+(currentCompany==='Enel'?'Enel Rio · '+(currentPeriod==='2025'?'2025':'1º semestre de 2026'):'Light · dados municipais não disponíveis');
+ document.querySelectorAll('.kpi b')[0].textContent=showStreetCases?'3':'—';
+ document.querySelectorAll('.kpi b')[1].textContent=showStreetCases?'1':'—';
+ document.querySelectorAll('.kpi span')[0].textContent='Ruas com casos divulgados';
+ document.querySelectorAll('.kpi span')[1].textContent='Municípios com casos';
+ document.querySelector('.map-stamp').innerHTML='<b>RIO DE JANEIRO · 92 MUNICÍPIOS</b>'+(showStreetCases?'3 ruas com casos divulgados · Teresópolis':currentCompany==='Enel'?'Sem casos públicos geocodificados neste recorte':'Light · dados municipais não disponíveis');
 }
 document.getElementById('company').addEventListener('change',e=>{currentCompany=e.target.value;currentCity='all';render();});
 document.getElementById('period').addEventListener('change',e=>{currentPeriod=e.target.value;currentCity='all';render();});

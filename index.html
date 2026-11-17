@@ -90,6 +90,48 @@ aside:not(.app-rail){background:#0b1d2c;border-left:1px solid #20394b;min-height
 @media(max-width:1100px){main{grid-template-columns:160px minmax(0,1fr)}.workspace{grid-template-columns:minmax(0,1fr) 280px}.kpis div{min-width:76px}.kpis b{font-size:19px}}
 @media(max-width:760px){body{height:auto;min-height:100vh;overflow:auto;grid-template-rows:auto auto}header{height:auto;flex-wrap:wrap;padding:10px;gap:8px}.brand{min-width:0}.kpis{width:100%;justify-content:space-between}.kpis div{min-width:0;flex:1;padding:6px}.kpis b{font-size:18px}main{height:auto;grid-template-columns:1fr;grid-template-rows:auto auto minmax(480px,60vh) auto}.app-rail{grid-column:1;grid-row:1;display:none}.filters{grid-column:1;grid-row:1;padding:10px}.filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workspace{grid-column:1;grid-row:2;grid-template-columns:1fr;grid-template-rows:55vh auto}.map-wrap{min-height:360px}#map{min-height:360px}aside:not(.app-rail){border-left:0;border-top:1px solid #20394b;max-height:60vh}.note{max-height:24vh}}
 
+
+/* Dashboard executivo em grade: mapa central, heatmap lateral e análises inferiores */
+body{grid-template-rows:66px minmax(0,1fr);overflow:hidden}
+main{grid-template-columns:190px minmax(0,1fr);grid-template-rows:96px minmax(360px,1fr) 205px;min-height:0;height:calc(100vh - 66px)}
+.app-rail{grid-column:1;grid-row:1/4}
+.filters{grid-column:2;grid-row:1;min-height:0}
+.workspace{grid-column:2;grid-row:2;grid-template-columns:minmax(0,1fr) 300px;min-height:0}
+.map-wrap,#map{min-height:0}
+aside:not(.app-rail){display:flex;flex-direction:column;overflow:hidden}
+.heat-panel{padding:10px 11px 8px;border-bottom:1px solid #20394b;background:#0b1d2c}
+.panel-title{font-size:10px;font-weight:700;color:#e1edf2;margin:0 0 3px;letter-spacing:.02em}
+.panel-sub{font-size:8px;color:#8fa7b6;margin-bottom:7px}
+#heatmapMini{height:112px;width:100%;border-radius:6px;overflow:hidden;background:#102638;border:1px solid #294457}
+#heatmapMini .leaflet-control-attribution{display:none}
+.monitor-panel{padding:9px 11px 10px;border-bottom:1px solid #20394b}
+.monitor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:8px}
+.monitor-cell{text-align:center;min-width:0}
+.monitor-ring{width:54px;height:54px;margin:0 auto 4px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--ring) calc(var(--pct)*1%),#263d4d 0);position:relative}
+.monitor-ring:before{content:"";position:absolute;inset:6px;border-radius:50%;background:#0b1d2c}
+.monitor-ring b{position:relative;font-size:13px;color:#f1f6f8}
+.monitor-cell span{display:block;font-size:8px;color:#a9bdc8}
+.monitor-cell small{font-size:8px;color:#718d9e}
+aside .list-head{flex:none}
+aside .list{min-height:70px;flex:1}
+.analytics{grid-column:2;grid-row:3;display:grid;grid-template-columns:1.05fr 1.15fr 1fr 1fr;gap:9px;padding:8px 10px 10px;background:#071522;border-top:1px solid #20394b;min-height:0;overflow:hidden}
+.chart-card{min-width:0;min-height:0;padding:10px 11px;background:#0d2030;border:1px solid #20394b;border-radius:7px;overflow:hidden}
+.chart-title{font-size:10px;font-weight:700;color:#e1edf2;margin-bottom:8px}
+.chart-sub{font-size:8px;color:#829baa;margin-top:-6px;margin-bottom:7px}
+.bar-row{display:grid;grid-template-columns:minmax(55px, .8fr) minmax(35px,1.5fr) 27px;gap:6px;align-items:center;margin:8px 0;font-size:8px;color:#b7c8d1}
+.bar-track{height:9px;background:#1a3446;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;background:#1684d8}
+.bar-value{text-align:right;color:#dce8ee;font-weight:700;font-size:8px}
+.donut-layout{display:flex;align-items:center;gap:12px;height:calc(100% - 28px)}
+.donut{width:104px;height:104px;flex:0 0 104px;border-radius:50%;background:conic-gradient(#ed3d45 0 28%,#f2ad16 28% 75%,#1fc46b 75% 100%);position:relative}
+.donut:after{content:attr(data-total);position:absolute;inset:25px;border-radius:50%;background:#0d2030;display:grid;place-items:center;color:#edf4f7;font-size:13px;font-weight:700}
+.donut-legend{display:grid;gap:10px;font-size:9px;color:#c3d1d9}
+.donut-legend span:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--c)}
+.origin-row{display:flex;justify-content:space-between;gap:6px;padding:8px 0;border-bottom:1px solid #20394b;font-size:9px;color:#c4d3db}
+.origin-row b{color:#edf4f7}
+@media(max-width:1100px){main{grid-template-columns:160px minmax(0,1fr);grid-template-rows:110px minmax(340px,1fr) 195px}.workspace{grid-template-columns:minmax(0,1fr) 260px}.analytics{gap:6px;padding:6px}.chart-card{padding:8px}.donut{width:82px;height:82px;flex-basis:82px}.donut:after{inset:20px}}
+@media(max-width:760px){body{height:auto;min-height:100vh;overflow:auto;grid-template-rows:auto auto}main{height:auto;grid-template-columns:1fr;grid-template-rows:auto auto minmax(480px,60vh) auto}.app-rail{display:none}.filters{grid-column:1;grid-row:1}.workspace{grid-column:1;grid-row:2;grid-template-columns:1fr;grid-template-rows:55vh auto}.map-wrap{min-height:360px}#map{min-height:360px}.workspace aside{max-height:none}.analytics{grid-column:1;grid-row:3;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px;overflow:visible}.monitor-ring{width:48px;height:48px}}
+
 </style>
 </head>
 <body>
@@ -147,6 +189,8 @@ aside:not(.app-rail){background:#0b1d2c;border-left:1px solid #20394b;min-height
   <section class="workspace">
     <div class="map-wrap"><div id="map" role="region" aria-label="Mapa de ocorrências por rua e bairro"></div><div id="tilewarn" class="tilewarn" hidden>O mapa de ruas não carregou. Verifique a conexão com a internet.</div></div>
     <aside>
+      <section class="heat-panel"><h2 class="panel-title">Mapa de calor</h2><div class="panel-sub">Concentração geográfica das ocorrências visíveis</div><div id="heatmapMini" aria-label="Mapa de calor das ocorrências"></div></section>
+      <section class="monitor-panel"><h2 class="panel-title">Monitoramento por criticidade</h2><div class="monitor-grid"><div class="monitor-cell"><div class="monitor-ring" id="ringCrit" style="--ring:#ed3d45;--pct:0"><b id="pctCrit">0%</b></div><span>Críticos</span><small id="numCrit">0 pontos</small></div><div class="monitor-cell"><div class="monitor-ring" id="ringHigh" style="--ring:#f2ad16;--pct:0"><b id="pctHigh">0%</b></div><span>Altos</span><small id="numHigh">0 pontos</small></div><div class="monitor-cell"><div class="monitor-ring" id="ringLow" style="--ring:#1fc46b;--pct:0"><b id="pctLow">0%</b></div><span>Afetados</span><small id="numLow">0 pontos</small></div></div></section>
       <div class="list-head"><strong>Ocorrências por município</strong><span id="listCount">—</span></div>
       <div class="list" id="list"></div>
       <div class="note">
@@ -156,6 +200,12 @@ aside:not(.app-rail){background:#0b1d2c;border-left:1px solid #20394b;min-height
         <details style="margin-top:8px"><summary>Resumo por município: pico sem luz e reclamações</summary><table id="ramun" style="width:100%;border-collapse:collapse;margin-top:6px;font-size:11px"></table><p style="margin:6px 0 0">Pico: maior número de clientes ou imóveis sem luz publicado pela imprensa com dados das concessionárias. Reclamações: cidade informada pelo consumidor no Reclame Aqui; em poucos casos o texto cita outra cidade. * Consumidores da Enel que informaram "Rio de Janeiro" (o estado) como cidade.</p></details>
       </div>
     </aside>
+  </section>
+  <section class="analytics" aria-label="Indicadores e gráficos">
+    <article class="chart-card"><div class="chart-title">Ocorrências por concessionária</div><div id="chartCompanies"></div></article>
+    <article class="chart-card"><div class="chart-title">Municípios com mais ocorrências</div><div id="chartMunicipalities"></div></article>
+    <article class="chart-card"><div class="chart-title">Criticidade dos pontos</div><div class="donut-layout"><div class="donut" id="severityDonut" data-total="0"></div><div class="donut-legend" id="severityLegend"></div></div></article>
+    <article class="chart-card"><div class="chart-title">Origem dos pontos</div><div id="chartOrigins"></div></article>
   </section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -190,6 +240,9 @@ L.geoJSON(JSON.parse(document.getElementById('munis').textContent),{style:{color
 let heat=L.heatLayer([],{radius:30,blur:24,maxZoom:14,minOpacity:.35,gradient:{.25:'#FCE8A6',.5:'#F7B23B',.7:'#E4651C',.88:'#B4271C',1:'#6E1422'}}).addTo(map);
 const markers=L.layerGroup().addTo(map);
 const rings=L.layerGroup().addTo(map);
+const miniMap=L.map('heatmapMini',{zoomControl:false,attributionControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false}).setView([-22.65,-43.1],7);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:12}).addTo(miniMap);
+const miniHeat=L.heatLayer([],{radius:17,blur:13,maxZoom:10,minOpacity:.32,gradient:{.25:'#2d70b7',.5:'#f4d34f',.72:'#f27b27',.9:'#e52c24',1:'#8f142b'}}).addTo(miniMap);
 
 const legend=L.control({position:'bottomleft'});
 legend.onAdd=()=>{const d=L.DomUtil.create('div','legend');d.innerHTML=`<i style="background:${css('--n3')}"></i>Crítico<br><i style="background:${css('--n2')}"></i>Alto<br><i style="background:${css('--n1')}"></i>Afetado<br><i style="background:${css('--rec')}"></i>Recorrência 2026<br><i style="background:transparent;border:3px solid ${css('--n2')};box-sizing:border-box"></i>Relato de morador`;return d;};
@@ -214,6 +267,23 @@ function popup(p){
   <div style="margin-top:6px"><a href="${gmaps(p)}" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
   <div style="margin-top:4px;font-size:12px">Fonte: ${srcs(p)}</div>`;
 }
+function renderAnalytics(vis){
+  const base=vis.filter(p=>!p.rec), total=base.length||1;
+  const counts={crit:base.filter(p=>p.n===3).length,high:base.filter(p=>p.n===2).length,low:base.filter(p=>p.n===1).length};
+  const pct=Math.round(counts.crit/total*100), pctH=Math.round(counts.high/total*100), pctL=Math.max(0,100-pct-pctH);
+  [['Crit',counts.crit,pct],['High',counts.high,pctH],['Low',counts.low,pctL]].forEach(([key,n,v])=>{document.getElementById('pct'+key).textContent=v+'%';document.getElementById('num'+key).textContent=n+' pontos';document.getElementById('ring'+key).style.setProperty('--pct',v);});
+  const makeBars=(id,rows,color)=>{const max=Math.max(1,...rows.map(x=>x[1]));document.getElementById(id).innerHTML=rows.map(([name,n])=>'<div class="bar-row"><span title="'+name+'">'+name+'</span><div class="bar-track"><div class="bar-fill" style="width:'+Math.max(2,n/max*100)+'%;background:'+color+'"></div></div><b class="bar-value">'+n+'</b></div>').join('')||'<span class="chart-sub">Sem ocorrências para os filtros atuais.</span>';};
+  const companies=['Light','Enel'].map(c=>[c,base.filter(p=>p.c===c).length]).sort((a,b)=>b[1]-a[1]);
+  makeBars('chartCompanies',companies,'#1684d8');
+  const mun={};base.forEach(p=>mun[p.m]=(mun[p.m]||0)+1);
+  makeBars('chartMunicipalities',Object.entries(mun).sort((a,b)=>b[1]-a[1]).slice(0,5),'#25b65d');
+  const c=counts.crit,h=counts.high,l=counts.low, a=c/total*100,b=(c+h)/total*100;
+  document.getElementById('severityDonut').style.background='conic-gradient(#ed3d45 0% '+a+'%,#f2ad16 '+a+'% '+b+'%,#1fc46b '+b+'% 100%)';
+  document.getElementById('severityDonut').dataset.total=base.length;
+  document.getElementById('severityLegend').innerHTML='<span style="--c:#ed3d45">Crítico <b>'+c+'</b></span><span style="--c:#f2ad16">Alto <b>'+h+'</b></span><span style="--c:#1fc46b">Afetado <b>'+l+'</b></span>';
+  const origins=[['Imprensa / prefeitura',base.filter(p=>p.o!=='relato').length],['Relatos de moradores',base.filter(p=>p.o==='relato').length]];
+  document.getElementById('chartOrigins').innerHTML=origins.map(([n,v])=>'<div class="origin-row"><span>'+n+'</span><b>'+v+'</b></div>').join('');
+}
 function render(){
   const vis=PTS.filter(visible);
   const complaintTotal=vis.reduce((sum,p)=>sum+(p.k||0),0);
@@ -229,6 +299,9 @@ function render(){
     p._mk=mk;markers.addLayer(mk);
   });
   heat.setLatLngs(vis.filter(p=>!p.rec).map(p=>[p.ll[0],p.ll[1],(p.n===3?1:p.n===2?.65:.35)*(p.o==='relato'?.8:1)]));
+  const heatPoints=vis.filter(p=>!p.rec).map(p=>[p.ll[0],p.ll[1],(p.n===3?1:p.n===2?.65:.35)*(p.o==='relato'?.8:1)]);
+  miniHeat.setLatLngs(heatPoints);
+  renderAnalytics(vis);
   document.getElementById('kr').textContent=vis.filter(p=>p.o==='relato').reduce((s,p)=>s+(p.k||1),0);
   const crit=vis.filter(p=>!p.rec&&p.n===3);
   document.getElementById('k3').textContent=crit.length;

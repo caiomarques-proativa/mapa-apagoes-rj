@@ -1,6 +1,6 @@
-# Apagão de 7/11/2026 no estado do Rio: pontos por rua e bairro
+# Vigilantes da Luz — monitoramento de interrupções no RJ
 
-Mapa interativo dos locais que ficaram sem luz após o temporal de 7 de novembro de 2026, em todo o estado do Rio de Janeiro. Atualizado em 16/11/2026.
+Mapa interativo dos locais que ficaram sem luz após o temporal de 7 de novembro de 2026, em todo o estado do Rio de Janeiro. Atualizado em 18/11/2026.
 
 Abra `index.html` no navegador (Chrome ou Edge, com internet).
 
@@ -38,3 +38,11 @@ Relatos de moradores usam as horas informadas pelo próprio morador. Coordenadas
 ## Privacidade
 
 Nenhum nome de pessoa é publicado. Ruas aparecem sem número. As reclamações do Reclame Aqui já são públicas e mascaradas pela plataforma.
+
+## Verificação de monitoramento — 18/11/2026, 16h40
+
+- Não foram identificados novos pontos que cumpram simultaneamente os critérios de endereço verificável, coordenadas e evidência corroborável desde a rodada anterior.
+- A base permanece com **120 registros**; **96** têm posição marcada como conferida. O ranking Top 20 foi preservado, sem reordenação.
+- Foram registradas pistas novas de Paciência e Nova Jersey (Rio de Janeiro), além de relatos individuais sem logradouro identificável; permanecem fora da camada de pontos confirmados.
+- O arquivo `dados/pontos.geojson` foi reconstruído a partir de `dados/pontos.csv`, sem inclusão ou alteração de ocorrências, porque a versão anterior terminava incompleta. A nova versão contém 120 feições válidas.
+- Nenhum relatório PDF foi gerado nesta rodada, pois não houve novo ponto confirmado a incorporar.

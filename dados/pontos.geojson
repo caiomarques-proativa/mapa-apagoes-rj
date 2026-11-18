@@ -1,1000 +1,3028 @@
 {
- "type": "FeatureCollection",
- "features": [
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.41,
-     -22.737
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Ponte de Santa Maria (acesso ao Recantus)",
-    "bairro": "Recantus",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Protesto às 18h de 9/11; cerca de 72 h sem luz no Recantus",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/",
-     "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.3817,
-     -22.7181
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Sargento Roncalli (2ª etapa)",
-    "bairro": "Sargento Roncalli",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Mais de três dias sem energia, segundo moradores",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj",
-     "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.384397,
-     -22.716081
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Babi",
-    "bairro": "Babi",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Mais de três dias sem energia, segundo moradores",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj",
-     "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.405,
-     -22.765
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Colégio Kennedy",
-    "bairro": "",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": null,
-    "fato": "Protesto com fogo na via às 22h14 de 9/11",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.389183,
-     -22.743827
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Santa Amélia (perto do supermercado Supermarket)",
-    "bairro": "Santa Amélia",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": null,
-    "fato": "Protesto na noite de 9/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.356997,
-     -22.726588
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Parque dos Califas",
-    "bairro": "Parque dos Califas",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.418,
-     -22.756
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Xavantes",
-    "bairro": "Xavantes",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.395,
-     -22.77
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Morro do Machado",
-    "bairro": "Morro do Machado",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.416499,
-     -22.713116
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Shangri-lá",
-    "bairro": "Shangri-lá",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.3946,
-     -22.7579
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Morro da Caixa d’Água",
-    "bairro": "Morro da Caixa d’Água",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.399797,
-     -22.732498
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Nova Aurora",
-    "bairro": "Nova Aurora",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.405,
-     -22.74
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Santa Maria",
-    "bairro": "Santa Maria",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 72,
-    "fato": "Cerca de 72 h sem luz em 10/11",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.411544,
-     -22.7558
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Areia Branca",
-    "bairro": "Areia Branca",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Citado pela prefeitura entre os bairros atingidos",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://sitedabaixada.com.br/geral/2026/11/11/temporal-de-sabado-deixa-arvores-caidas-bairros-sem-luz-e-aulas-suspensas-na-baixada-fluminense"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.349511,
-     -22.753053
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Santa Teresa",
-    "bairro": "Santa Teresa",
-    "municipio": "Belford Roxo",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Citado pela prefeitura entre os bairros atingidos",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://sitedabaixada.com.br/geral/2026/11/11/temporal-de-sabado-deixa-arvores-caidas-bairros-sem-luz-e-aulas-suspensas-na-baixada-fluminense"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.245386,
-     -22.677305
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Avenida do Porto, Saracuruna",
-    "bairro": "Saracuruna",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Enel",
-    "nivel": "critico",
-    "horas_sem_luz": 30,
-    "fato": "Protesto em 9/11; sem luz desde 15h30 de sábado; Enel trocando postes",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://brasilemfolhas.com.br/2026/11/moradores-de-duque-de-caxias-protestam-contra-falta-de-energia/",
-     "https://diariodorio.com/ordem-publica/2026/11/08/temporal-deixa-mais-de-200-mil-pessoas-sem-luz-no-rio-de-janeiro.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.225,
-     -22.655
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "BR-116, km 138 (Vila do Recreio)",
-    "bairro": "Vila do Recreio",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Enel",
-    "nivel": "critico",
-    "horas_sem_luz": null,
-    "fato": "Cerca de 30 pessoas bloquearam parte da BR-116, sentido Rio, às 10h45 de 9/11 (a PRF situa o km 138 em Magé, na divisa com Caxias)",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://brasilemfolhas.com.br/2026/11/moradores-de-duque-de-caxias-protestam-contra-falta-de-energia/",
-     "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/",
-     "https://povonarua.com.br/protesto-falta-luz-rio-mage/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.247395,
-     -22.627676
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Imbariê",
-    "bairro": "Imbariê",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Enel",
-    "nivel": "critico",
-    "horas_sem_luz": 70,
-    "fato": "Ruas bloqueadas com barricadas em chamas em 9/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.315,
-     -22.757
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Bom Retiro",
-    "bairro": "Bom Retiro",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Enel",
-    "nivel": "alto",
-    "horas_sem_luz": 45,
-    "fato": "Apontado como a situação mais crítica do município, com alagamentos",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.269088,
-     -22.686468
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Jardim Primavera",
-    "bairro": "Jardim Primavera",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Enel",
-    "nivel": "afetado",
-    "horas_sem_luz": 45,
-    "fato": "Entre os bairros mais afetados",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.277148,
-     -22.704614
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Campos Elíseos",
-    "bairro": "Campos Elíseos",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Enel",
-    "nivel": "afetado",
-    "horas_sem_luz": 45,
-    "fato": "Entre os bairros mais afetados",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.290072,
-     -22.680836
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Estrada Velha do Pilar (subestação da Light)",
-    "bairro": "Pilar",
-    "municipio": "Duque de Caxias",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Árvore caída em frente à subestação desde 7/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-na-baixada-persiste-apos-temporal-no-rj/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.525061,
-     -22.726196
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Rua Ana Carvalho Santana, Austin",
-    "bairro": "Austin",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 74,
-    "fato": "Mais de dois dias sem luz e sem água; vários protocolos sem solução; até 74 h sem luz, segundo a ação da prefeitura contra a Light",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://agendadopoder.com.br/falta-de-luz-persiste-por-48-horas-na-baixada-e-fecha-escolas-e-postos/",
-     "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-na-baixada-persiste-apos-temporal-no-rj/",
-     "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.54767,
-     -22.78345
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Cabuçu",
-    "bairro": "Cabuçu",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 74,
-    "fato": "Falta de luz e de água; casa destelhada; até 74 h sem luz, segundo a ação da prefeitura contra a Light",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-na-baixada-persiste-apos-temporal-no-rj/",
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
-     "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.450488,
-     -22.757162
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Centro",
-    "bairro": "Centro",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 74,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura; até 74 h sem luz, segundo a ação da prefeitura contra a Light",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
-     "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/",
-     "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.469875,
-     -22.690267
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Santa Rita",
-    "bairro": "Santa Rita",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
-     "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.417639,
-     -22.592607
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Tinguá",
-    "bairro": "Tinguá",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
-     "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.472807,
-     -22.730828
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Cerâmica",
-    "bairro": "Cerâmica",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.465662,
-     -22.714037
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Cobrex",
-    "bairro": "Cobrex",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.508,
-     -22.744
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Marco II",
-    "bairro": "Marco II",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.47,
-     -22.705
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Jardim Carioca",
-    "bairro": "Jardim Carioca",
-    "municipio": "Nova Iguaçu",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.56,
-     -22.705
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "São Jorge",
-    "bairro": "São Jorge",
-    "municipio": "Queimados",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 70,
-    "fato": "Sem luz desde sábado; comerciante relatou quase três dias e perda de mercadoria",
-    "posicao_conferida": false,
-    "fontes": [
-     "https://agendadopoder.com.br/falta-de-luz-persiste-por-48-horas-na-baixada-e-fecha-escolas-e-postos/",
-     "https://www.ocafezinho.com/2026-11-10/baixada-segue-no-escuro-48-horas-apos-temporal-no-rio"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.643426,
-     -22.641007
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Casinhas / Chacrinha (linha do trem)",
-    "bairro": "Chacrinha",
-    "municipio": "Japeri",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": 48,
-    "fato": "Barricadas em chamas nos trilhos em 9/11; trens só até Engenheiro Pedreira",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://povonarua.com.br/japeri-protesto-barricadas-bloqueio-ferroviario-falta-luz/",
-     "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.68,
-     -22.76
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Campus da UFRRJ",
-    "bairro": "",
-    "municipio": "Seropédica",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Rede elétrica do campus danificada; atividades suspensas",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://sitedabaixada.com.br/geral/2026/11/11/temporal-de-sabado-deixa-arvores-caidas-bairros-sem-luz-e-aulas-suspensas-na-baixada-fluminense"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.810897,
-     -22.806631
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Piranema",
-    "bairro": "Piranema",
-    "municipio": "Itaguaí",
-    "concessionaria": "Light",
-    "nivel": "alto",
-    "horas_sem_luz": 48,
-    "fato": "Mais de dois dias sem luz; prefeito cobrou a Light",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/",
-     "https://brasilemfolhas.com.br/2026/11/prefeito-de-itaguai-cobra-light-por-falta-de-energia/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.766189,
-     -22.832924
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Chaperó",
-    "bairro": "Chaperó",
-    "municipio": "Itaguaí",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Um dos bairros mais afetados, segundo o prefeito",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://brasilemfolhas.com.br/2026/11/prefeito-de-itaguai-cobra-light-por-falta-de-energia/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.414774,
-     -22.808281
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Av. Roberto Silveira, perto do viaduto",
-    "bairro": "",
-    "municipio": "Nilópolis",
-    "concessionaria": "Light",
-    "nivel": "afetado",
-    "horas_sem_luz": 18,
-    "fato": "Sem luz do sábado à tarde até, pelo menos, o domingo",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-no-rio-atinge-moradores-e-locais-do-enem/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -42.981294,
-     -22.89424
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "RJ-106, altura de Rio do Ouro",
-    "bairro": "Rio do Ouro",
-    "municipio": "São Gonçalo",
-    "concessionaria": "Enel",
-    "nivel": "critico",
-    "horas_sem_luz": null,
-    "fato": "Barricadas e fogo na pista sentido Niterói em 8/11; 12.289 clientes sem luz na cidade às 7h55 de 9/11",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://www.atribunarj.com.br/materia/mais-de-14-mil-clientes-de-niteroi-e-sg-seguem-sem-luz-apos-temporal"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.04525,
-     -22.867769
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Novo México",
-    "bairro": "Novo México",
-    "municipio": "São Gonçalo",
-    "concessionaria": "Enel",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Mais atingido pela chuva segundo a Defesa Civil (falta de luz não detalhada)",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://agendadopoder.com.br/temporal-no-estado-do-rio-deixou-cidades-sem-energia-provocou-deslizamentos-e-afeta-escolas/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.06278,
-     -22.84028
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Sete Pontes",
-    "bairro": "Sete Pontes",
-    "municipio": "São Gonçalo",
-    "concessionaria": "Enel",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Mais atingido pela chuva segundo a Defesa Civil (falta de luz não detalhada)",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://agendadopoder.com.br/temporal-no-estado-do-rio-deixou-cidades-sem-energia-provocou-deslizamentos-e-afeta-escolas/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -42.878401,
-     -22.70206
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Jardins Porto das Caixas",
-    "bairro": "Porto das Caixas",
-    "municipio": "Itaboraí",
-    "concessionaria": "Enel",
-    "nivel": "afetado",
-    "horas_sem_luz": null,
-    "fato": "Igreja desabou; município chegou a 25 mil clientes sem luz",
-    "posicao_conferida": true,
-    "fontes": [
-     "https://diariodorio.com/ordem-publica/2026/11/08/temporal-deixa-mais-de-200-mil-pessoas-sem-luz-no-rio-de-janeiro.html",
-     "https://agendadopoder.com.br/temporal-no-estado-do-rio-deixou-cidades-sem-energia-provocou-deslizamentos-e-afeta-escolas/"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -43.1075,
-     -22.76438
-    ]
-   },
-   "properties": {
-    "origem": "noticia",
-    "local": "Ilha de Paquetá",
-    "bairro": "Paquetá",
-    "municipio": "Rio de Janeiro",
-    "concessionaria": "Light",
-    "nivel": "critico",
-    "horas_sem_luz": null,
-    "fato": "Apagões e oscilação desde o fim de outubro; protesto marcado para sábado, 14/11, às 10h",
-    "posicao_conferida": true,
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.41,
+          -22.737
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Ponte de Santa Maria (acesso ao Recantus)",
+        "bairro": "Recantus",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Protesto às 18h de 9/11; cerca de 72 h sem luz no Recantus",
+        "precisao": "ponto",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/",
+          "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3817,
+          -22.7181
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Sargento Roncalli (2ª etapa)",
+        "bairro": "Sargento Roncalli",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Mais de três dias sem energia, segundo moradores",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj",
+          "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.384397,
+          -22.716081
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Babi",
+        "bairro": "Babi",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Mais de três dias sem energia, segundo moradores",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj",
+          "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.405,
+          -22.765
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Colégio Kennedy",
+        "bairro": "",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": null,
+        "fato": "Protesto com fogo na via às 22h14 de 9/11",
+        "precisao": "ponto",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.389183,
+          -22.743827
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Santa Amélia (perto do supermercado Supermarket)",
+        "bairro": "Santa Amélia",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": null,
+        "fato": "Protesto na noite de 9/11",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://belfordroxo24h.com/belford-roxo-protestos-falta-de-luz-light-9-novembro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.356997,
+          -22.726588
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Parque dos Califas",
+        "bairro": "Parque dos Califas",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.418,
+          -22.756
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Xavantes",
+        "bairro": "Xavantes",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.395,
+          -22.77
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Morro do Machado",
+        "bairro": "Morro do Machado",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.416499,
+          -22.713116
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Shangri-lá",
+        "bairro": "Shangri-lá",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3946,
+          -22.7579
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Morro da Caixa d’Água",
+        "bairro": "Morro da Caixa d’Água",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.399797,
+          -22.732498
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Nova Aurora",
+        "bairro": "Nova Aurora",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.405,
+          -22.74
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Santa Maria",
+        "bairro": "Santa Maria",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Cerca de 72 h sem luz em 10/11",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.noticiasdenovaiguacu.com/2026/11/demora-da-light-em-restabelecer-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.411544,
+          -22.7558
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Areia Branca",
+        "bairro": "Areia Branca",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Citado pela prefeitura entre os bairros atingidos",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://sitedabaixada.com.br/geral/2026/11/11/temporal-de-sabado-deixa-arvores-caidas-bairros-sem-luz-e-aulas-suspensas-na-baixada-fluminense"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.349511,
+          -22.753053
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Santa Teresa",
+        "bairro": "Santa Teresa",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Citado pela prefeitura entre os bairros atingidos",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://sitedabaixada.com.br/geral/2026/11/11/temporal-de-sabado-deixa-arvores-caidas-bairros-sem-luz-e-aulas-suspensas-na-baixada-fluminense"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.245386,
+          -22.677305
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Avenida do Porto, Saracuruna",
+        "bairro": "Saracuruna",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 30,
+        "fato": "Protesto em 9/11; sem luz desde 15h30 de sábado; Enel trocando postes",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://brasilemfolhas.com.br/2026/11/moradores-de-duque-de-caxias-protestam-contra-falta-de-energia/",
+          "https://diariodorio.com/ordem-publica/2026/11/08/temporal-deixa-mais-de-200-mil-pessoas-sem-luz-no-rio-de-janeiro.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.225,
+          -22.655
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "BR-116, km 138 (Vila do Recreio)",
+        "bairro": "Vila do Recreio",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": null,
+        "fato": "Cerca de 30 pessoas bloquearam parte da BR-116, sentido Rio, às 10h45 de 9/11 (a PRF situa o km 138 em Magé, na divisa com Caxias)",
+        "precisao": "ponto",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://brasilemfolhas.com.br/2026/11/moradores-de-duque-de-caxias-protestam-contra-falta-de-energia/",
+          "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/",
+          "https://povonarua.com.br/protesto-falta-luz-rio-mage/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.247395,
+          -22.627676
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Imbariê",
+        "bairro": "Imbariê",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 70,
+        "fato": "Ruas bloqueadas com barricadas em chamas em 9/11",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.315,
+          -22.757
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Bom Retiro",
+        "bairro": "Bom Retiro",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 45,
+        "fato": "Apontado como a situação mais crítica do município, com alagamentos",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.269088,
+          -22.686468
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Jardim Primavera",
+        "bairro": "Jardim Primavera",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 45,
+        "fato": "Entre os bairros mais afetados",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.277148,
+          -22.704614
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Campos Elíseos",
+        "bairro": "Campos Elíseos",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 45,
+        "fato": "Entre os bairros mais afetados",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.290072,
+          -22.680836
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Estrada Velha do Pilar (subestação da Light)",
+        "bairro": "Pilar",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Árvore caída em frente à subestação desde 7/11",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-na-baixada-persiste-apos-temporal-no-rj/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.525061,
+          -22.726196
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Rua Ana Carvalho Santana, Austin",
+        "bairro": "Austin",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 74,
+        "fato": "Mais de dois dias sem luz e sem água; vários protocolos sem solução; até 74 h sem luz, segundo a ação da prefeitura contra a Light",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://agendadopoder.com.br/falta-de-luz-persiste-por-48-horas-na-baixada-e-fecha-escolas-e-postos/",
+          "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-na-baixada-persiste-apos-temporal-no-rj/",
+          "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.54767,
+          -22.78345
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Cabuçu",
+        "bairro": "Cabuçu",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 74,
+        "fato": "Falta de luz e de água; casa destelhada; até 74 h sem luz, segundo a ação da prefeitura contra a Light",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-na-baixada-persiste-apos-temporal-no-rj/",
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
+          "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.450488,
+          -22.757162
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Centro",
+        "bairro": "Centro",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 74,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura; até 74 h sem luz, segundo a ação da prefeitura contra a Light",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
+          "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/",
+          "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.469875,
+          -22.690267
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Santa Rita",
+        "bairro": "Santa Rita",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
+          "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.417639,
+          -22.592607
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Tinguá",
+        "bairro": "Tinguá",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/",
+          "https://mancheterio.com.br/demora-na-volta-da-luz-apos-temporais-do-fim-de-semana-gera-protestos-e-cobrancas/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.472807,
+          -22.730828
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Cerâmica",
+        "bairro": "Cerâmica",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.465662,
+          -22.714037
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Cobrex",
+        "bairro": "Cobrex",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.508,
+          -22.744
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Marco II",
+        "bairro": "Marco II",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.47,
+          -22.705
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Jardim Carioca",
+        "bairro": "Jardim Carioca",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Entre os bairros mais atingidos, segundo a prefeitura",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://ejornais.com.br/index.php/2026/11/09/tempestade-com-ventos-de-ate-806-km-h-deixa-85-mil-imoveis-sem-luz-em-nova-iguacu/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.56,
+          -22.705
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "São Jorge",
+        "bairro": "São Jorge",
+        "municipio": "Queimados",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 70,
+        "fato": "Sem luz desde sábado; comerciante relatou quase três dias e perda de mercadoria",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://agendadopoder.com.br/falta-de-luz-persiste-por-48-horas-na-baixada-e-fecha-escolas-e-postos/",
+          "https://www.ocafezinho.com/2026-11-10/baixada-segue-no-escuro-48-horas-apos-temporal-no-rio"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.643426,
+          -22.641007
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Casinhas / Chacrinha (linha do trem)",
+        "bairro": "Chacrinha",
+        "municipio": "Japeri",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 48,
+        "fato": "Barricadas em chamas nos trilhos em 9/11; trens só até Engenheiro Pedreira",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://povonarua.com.br/japeri-protesto-barricadas-bloqueio-ferroviario-falta-luz/",
+          "https://sbtnews.sbt.com.br/noticia/brasil/moradores-de-3-cidades-protestam-apos-70-horas-sem-luz-no-rj"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.68,
+          -22.76
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Campus da UFRRJ",
+        "bairro": "",
+        "municipio": "Seropédica",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Rede elétrica do campus danificada; atividades suspensas",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://sitedabaixada.com.br/geral/2026/11/11/temporal-de-sabado-deixa-arvores-caidas-bairros-sem-luz-e-aulas-suspensas-na-baixada-fluminense"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.810897,
+          -22.806631
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Piranema",
+        "bairro": "Piranema",
+        "municipio": "Itaguaí",
+        "concessionaria": "Light",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Mais de dois dias sem luz; prefeito cobrou a Light",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://tmc.com.br/brasil/temporal-provoca-morte-e-deixa-cidades-do-rio-com-problemas-no-fornecimento-de-energia/",
+          "https://brasilemfolhas.com.br/2026/11/prefeito-de-itaguai-cobra-light-por-falta-de-energia/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.766189,
+          -22.832924
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Chaperó",
+        "bairro": "Chaperó",
+        "municipio": "Itaguaí",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Um dos bairros mais afetados, segundo o prefeito",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://brasilemfolhas.com.br/2026/11/prefeito-de-itaguai-cobra-light-por-falta-de-energia/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.414774,
+          -22.808281
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Av. Roberto Silveira, perto do viaduto",
+        "bairro": "",
+        "municipio": "Nilópolis",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 18,
+        "fato": "Sem luz do sábado à tarde até, pelo menos, o domingo",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://queimados.encontrariodejaneiro.com.br/falta-de-energia-no-rio-atinge-moradores-e-locais-do-enem/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.981294,
+          -22.89424
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "RJ-106, altura de Rio do Ouro",
+        "bairro": "Rio do Ouro",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": null,
+        "fato": "Barricadas e fogo na pista sentido Niterói em 8/11; 12.289 clientes sem luz na cidade às 7h55 de 9/11",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.atribunarj.com.br/materia/mais-de-14-mil-clientes-de-niteroi-e-sg-seguem-sem-luz-apos-temporal"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.04525,
+          -22.867769
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Novo México",
+        "bairro": "Novo México",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Mais atingido pela chuva segundo a Defesa Civil (falta de luz não detalhada)",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://agendadopoder.com.br/temporal-no-estado-do-rio-deixou-cidades-sem-energia-provocou-deslizamentos-e-afeta-escolas/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.06278,
+          -22.84028
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Sete Pontes",
+        "bairro": "Sete Pontes",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Mais atingido pela chuva segundo a Defesa Civil (falta de luz não detalhada)",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://agendadopoder.com.br/temporal-no-estado-do-rio-deixou-cidades-sem-energia-provocou-deslizamentos-e-afeta-escolas/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.878401,
+          -22.70206
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Jardins Porto das Caixas",
+        "bairro": "Porto das Caixas",
+        "municipio": "Itaboraí",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Igreja desabou; município chegou a 25 mil clientes sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://diariodorio.com/ordem-publica/2026/11/08/temporal-deixa-mais-de-200-mil-pessoas-sem-luz-no-rio-de-janeiro.html",
+          "https://agendadopoder.com.br/temporal-no-estado-do-rio-deixou-cidades-sem-energia-provocou-deslizamentos-e-afeta-escolas/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1075,
+          -22.76438
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Ilha de Paquetá",
+        "bairro": "Paquetá",
+        "municipio": "Rio de Janeiro",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": null,
+        "fato": "Apagões e oscilação desde o fim de outubro; protesto marcado para sábado, 14/11, às 10h",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://brasilemfolhas.com.br/2026/11/moradores-de-paqueta-relatam-apagoes-e-oscilacoes-de-energia/",
+          "https://ncnews.com.br/2026/11/09/moradores-paqueta-enfrentam-apagoes/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.025633,
+          -22.781263
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Salgueiro",
+        "bairro": "Salgueiro",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.990542,
+          -22.837753
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Coelho",
+        "bairro": "Coelho",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.002338,
+          -22.839605
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Almerinda",
+        "bairro": "Almerinda",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.995965,
+          -22.796886
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Jardim Catarina Velho",
+        "bairro": "Jardim Catarina",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43,
+          -22.82
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Jardim Alcântara",
+        "bairro": "Jardim Alcântara",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.992409,
+          -22.824907
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Raul Veiga",
+        "bairro": "Raul Veiga",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.075565,
+          -22.847852
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Pita",
+        "bairro": "Pita",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.130698,
+          -22.883806
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Ponta d’Areia",
+        "bairro": "Ponta d’Areia",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.08333,
+          -22.95
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Piratininga",
+        "bairro": "Piratininga",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.10675,
+          -22.877224
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Largo do Barradas",
+        "bairro": "Barreto",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026; moradores ameaçaram protesto",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.086998,
+          -22.918732
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "São Francisco",
+        "bairro": "São Francisco",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.075362,
+          -22.859403
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Tenente Jardim",
+        "bairro": "Tenente Jardim",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.066028,
+          -22.862918
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Morro do Castro",
+        "bairro": "Morro do Castro",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Sem luz após temporal de 1º/2/2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://enfoco.com.br/noticias/regiao/niteroi/bairros-de-niteroi-e-sao-goncalo-sem-luz-apos-temporal/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.77,
+          -22.857
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Rua Gustavo Dutra, Califórnia",
+        "bairro": "Califórnia",
+        "municipio": "Itaguaí",
+        "concessionaria": "Light",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Energia só voltou cinco dias depois do vendaval de 29/7/2026",
+        "precisao": "rua",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://jornalatual.com.br/falta-de-energia-continua-itaguai"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.8138,
+          -22.8758
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Brisamar",
+        "bairro": "Brisamar",
+        "municipio": "Itaguaí",
+        "concessionaria": "Light",
+        "nivel": "recorrencia",
+        "horas_sem_luz": null,
+        "fato": "Protesto de moradores após o vendaval de julho/agosto de 2026",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://jornalatual.com.br/tag/light"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.567306,
+          -22.766875
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Campo Alegre",
+        "bairro": "Campo Alegre",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "critico",
+        "horas_sem_luz": 74,
+        "fato": "Citado pela prefeitura entre os bairros com até 74 h sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.jornaldestaquebaixada.com/2026/11/moradores-ficam-dias-sem-luz-e-nova.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0613,
+          -22.9069
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Pendotiba",
+        "bairro": "Pendotiba",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "Moradora recebeu previsão de retorno só para o dia seguinte (cerca de 24 h)",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://cidadedeniteroi.com/cidades/sem-luz-em-niteroi-moradora-recebe-previsao-de-retorno-so-no-domingo-a-tarde/",
+          "https://aseguirniteroi.com.br/noticias/temporal-transforma-tarde-em-noite-alaga-o-centro-trava-a-ponte-e-deixa-niteroi-no-escuro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.030865,
+          -22.948283
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Itaipu",
+        "bairro": "Itaipu",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Queda ou oscilação de energia relatada por moradores",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://aseguirniteroi.com.br/noticias/temporal-transforma-tarde-em-noite-alaga-o-centro-trava-a-ponte-e-deixa-niteroi-no-escuro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.008851,
+          -22.929987
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Engenho do Mato",
+        "bairro": "Engenho do Mato",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Queda de energia relatada por moradores",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://aseguirniteroi.com.br/noticias/temporal-transforma-tarde-em-noite-alaga-o-centro-trava-a-ponte-e-deixa-niteroi-no-escuro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.965692,
+          -22.908275
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Várzea das Moças",
+        "bairro": "Várzea das Moças",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Galhos sobre a rede de um condomínio; queda de energia",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://aseguirniteroi.com.br/noticias/temporal-transforma-tarde-em-noite-alaga-o-centro-trava-a-ponte-e-deixa-niteroi-no-escuro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.08706,
+          -22.8792
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Fonseca",
+        "bairro": "Fonseca",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Queda ou oscilação de energia relatada por moradores",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://aseguirniteroi.com.br/noticias/temporal-transforma-tarde-em-noite-alaga-o-centro-trava-a-ponte-e-deixa-niteroi-no-escuro/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.411544,
+          -22.7558
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Areia Branca",
+        "bairro": "Areia Branca",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Morador relata 48 h de falta e oscilação de energia desde o temporal",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-ha-48h-em-belford-roxo-e-ninguem-me-da-resposta_ktk0EuPfylq0lulZ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.348226,
+          -22.734828
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Parque São José",
+        "bairro": "Parque São José",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 36,
+        "fato": "Morador relata 36 h sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minha-horas-e-a-light-nao-da-previsao_4qM-okT6LsZyEb2p/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.402614,
+          -22.746594
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Vila Joana, Piam",
+        "bairro": "Piam",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Morador e vizinhos relatam 48 h sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-ha-48h-na-e-quando-ligam-a-luz-fica-apenas-em-fase-em-ponto-de-queimar-meus-eletrodomesticos-meus-vizinhos-estao-na-mesma-situacao_dHUHRsr7PgqxJnlt/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.390906,
+          -22.724205
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Jaraiçu",
+        "bairro": "São Jorge",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Moradores aguardando a luz voltar na rua",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minha-11-e-ninguem-resolve_iwQdDyHtCLxm6Q3H/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.37666,
+          -22.721014
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Ruas Sargento Valmor Garcia e Geraldo Pedro Souza",
+        "bairro": "Sargento Roncalli",
+        "municipio": "Belford Roxo",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 41,
+        "fato": "Metade das ruas do bairro sem luz desde sábado",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minha-rua-esta-sem-luz-desde-sabado-e-ninguem-resolve_evtTtrsADsPlslyv/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.317967,
+          -22.720125
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Urubuana e Travessa Alexandre Simões",
+        "bairro": "Parque Fluminense",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Light",
+        "nivel": "alto",
+        "horas_sem_luz": 68,
+        "fato": "Sem luz desde sábado; fio de alta tensão pendurado sobre casa",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minhas-ruas-estao-sem-luz-desde-sabado-e-a-light-nao-resolve_dVFx4Y28wozH94J1/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.258178,
+          -22.681512
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Itauzingo, Jardim Primavera",
+        "bairro": "Jardim Primavera",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 65,
+        "fato": "Rua inteira sem luz desde sábado à tarde",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estou-sem-luz-desde-sabado-e-a-empresa-nao-resolve-alimentos-estragados_xQ2XHppfMEtAFk4q/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.282737,
+          -22.673212
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Projetada, perto do Hospital de Saracuruna",
+        "bairro": "Jardim Primavera",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Falta de luz recorrente a cada chuva",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/ficamos-sem-luz-no-fim-de-semana-frequentemente-e-a-empresa-nao-resolve_JRB65zZtCSIi-_T6/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.232067,
+          -22.622732
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Batista da Costa",
+        "bairro": "Jardim Imbariê",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 60,
+        "fato": "Terceiro dia sem luz na rua",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/terceiro-dia-sem-luz-na-minha-rua-e-a-enel-nao-resolve_HQLCuKIv6cPn8Tmq/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.31278,
+          -22.57361
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Xerém",
+        "bairro": "Xerém",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 19,
+        "fato": "Metade do bairro sem luz; transformador que desarma com frequência",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/descaso-total-quase-20-horas-sem-energia-atendimento-pessimo-e-cobrancas-abusivas_ysXV3UADWl56nvuP/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.220952,
+          -22.649357
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Vila Sapê",
+        "bairro": "Vila Sapê",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "Mais de 24 h sem luz, prazo sendo adiado",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/mais-de-24h-sem-luz-e-com-fio-arrebentado-com-risco-de-acidente_OteMZ7OWwxRXxcPf/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.33,
+          -22.77
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Carolina (perto do Corte Oito)",
+        "bairro": "Carolina",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 15,
+        "fato": "Falta de luz a cada chuva; no vendaval anterior foram dois dias",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minha-rua-fica-sem-luz-toda-chuva-e-a-empresa-nao-resolve-nada_Z2Mca-h-XqFbVVyZ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.305206,
+          -22.784924
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Bahia, Centro",
+        "bairro": "Jardim 25 de Agosto",
+        "municipio": "Duque de Caxias",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 23,
+        "fato": "23 h sem luz no Centro",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/23-horas-sem-energia_hM6Y5-hruHT0L_UZ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.48,
+          -22.735
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Aparecida, Carmari",
+        "bairro": "Carmari",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 32,
+        "fato": "Galho sobre a fiação; 32 h sem luz",
+        "precisao": "rua",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-ha-32-horas-sem-energia-e-a-light-nao-resolve_csx3-HoUr61KTZxL/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.441287,
+          -22.762526
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua João Martins, Caonze",
+        "bairro": "Caonze",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 15,
+        "fato": "Rua que fica sem luz com frequência",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-desde-ontem-e-a-fiacao-antiga-causa-problemas-frequentes_zywU1g3vZKpP18LY/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4822,
+          -22.7531
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Canaã",
+        "bairro": "Canaã",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 22,
+        "fato": "Bairro inteiro sem luz desde o temporal",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-desde-ontem-e-a-light-nao-resolve-meu-problema_EDjdyp30xv_BsXNZ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.438542,
+          -22.69641
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Nova Luz / Figueiras",
+        "bairro": "Figueiras",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 15,
+        "fato": "Falta de energia recorrente; sem luz desde o temporal",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/falta-de-energia-recorrente___pFhuzAMDsc5NVh/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.469875,
+          -22.690267
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Santa Rita / Corumbá",
+        "bairro": "Corumbá",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 47,
+        "fato": "Sem luz desde sábado",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-em-santa-rita-corumba-desde-sabado-e-a-light-nao-resolve_jBpHmdvv-T98i50p/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.47,
+          -22.76
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Condomínio Nova Guanabara",
+        "bairro": "",
+        "municipio": "Nova Iguaçu",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Condomínio sem energia enquanto vizinhos têm luz",
+        "precisao": "ponto",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minha-energia-eletrica-no-condominio-nova-guanabara-e-interrompida-constantemente_w8H9g52A1crR0_GJ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.42764,
+          -22.770582
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Santo Elias (perto de Jacutinga)",
+        "bairro": "Santo Elias",
+        "municipio": "Mesquita",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 12,
+        "fato": "12 h sem luz, sem previsão",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-ha-mais-de-12-horas-e-a-light-nao-resolve__XHdgvigBnraScDw/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.419144,
+          -22.786871
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Vila Emil",
+        "bairro": "Vila Emil",
+        "municipio": "Mesquita",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "Mais de 24 h sem energia",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-energia-eletrica-ha-mais-de-24-horas-e-a-light-nao-resolve_lwIe-Jd6n1kL1Gkg/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.429278,
+          -22.78205
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Centro de Mesquita",
+        "bairro": "Centro",
+        "municipio": "Mesquita",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 30,
+        "fato": "30 h sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/perdi-alimentos-do-congelador-e-geladeira-por-falta-de-luz-e-a-light-nao-me-atende_2c63AxxTJZPJRMrY/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.38539,
+          -22.783249
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Av. Doutor Délio Guaraná, Éden",
+        "bairro": "Éden / Coelho da Rocha",
+        "municipio": "São João de Meriti",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "Mais de 24 h sem luz; idosos na rua",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/meus-pais-idosos-e-eu-estamos-sem-luz-mais-de-24-horas_JO90OZ7yDeIiig7G/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.411977,
+          -22.816751
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Olinda",
+        "bairro": "Olinda",
+        "municipio": "Nilópolis",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 14,
+        "fato": "14 h sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-ha-mais-de-14-horas-e-a-light-nao-resolve_fvG5Fef2lqn-_IcJ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.654741,
+          -22.787069
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Campo Lindo",
+        "bairro": "Campo Lindo",
+        "municipio": "Seropédica",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "24 h sem luz; problema antigo no bairro",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/fico-sem-energia-por-24h-no-meu-bairro-e-a-light-nao-resolve_SBPALXqJJ3V7Y_it/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.775,
+          -22.85
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Condomínio Village dos Ipês",
+        "bairro": "",
+        "municipio": "Itaguaí",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 18,
+        "fato": "Condomínio sem luz desde sábado à tarde",
+        "precisao": "ponto",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/condominio-village-dos-ipes-sem-luz_92cLn3TAYghYSGUa/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.554212,
+          -22.708366
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Itaparica",
+        "bairro": "",
+        "municipio": "Queimados",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 5,
+        "fato": "Quedas de luz frequentes",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/minha-rua-esta-sem-luz-desde-as-5h-e-a-empresa-nao-resolve_cebi2jv3Ndaf0O-f/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.394379,
+          -22.889211
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Condomínio da Aeronáutica, Sulacap",
+        "bairro": "Jardim Sulacap",
+        "municipio": "Rio de Janeiro",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 30,
+        "fato": "Poste que falha com vento; já ficaram 4 dias sem luz antes",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/fiquei-sem-luz-por-dias-e-ninguem-resolve-meu-problema-no-condominio_Gs69IKTSZdtMO3ks/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.027461,
+          -22.6515
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Jardim Santo Antônio (ref. Jardim Esmeralda)",
+        "bairro": "Jardim Santo Antônio",
+        "municipio": "Magé",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Dois dias sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/enel-rj-mage-jardim-santo-antonio-referencia-jardim-esmeralda_5tNwaxfEfancvDLj/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.95363,
+          -22.804224
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Monjolos",
+        "bairro": "Monjolos",
+        "municipio": "São Gonçalo",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Dois dias sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estou-ha-2-dias-sem-luz-em-monjolos-e-ninguem-resolve_Ckg81QCdSc_AdGEj/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.030865,
+          -22.948283
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Itaipu (rua do morador)",
+        "bairro": "Itaipu",
+        "municipio": "Niterói",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Falta de luz a cada chuva",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/falta-luz-toda-hora-na-minha-rua-em-itaipu-niteroi_Fh3a5Tu2E8o50ekv/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.859108,
+          -22.744963
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Calunga",
+        "bairro": "Calunga",
+        "municipio": "Itaboraí",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 8,
+        "fato": "Bairro inteiro sem luz por 8 h",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/meu-bairro-esta-sem-luz-ha-8-horas-e-a-enel-nao-atende_N_lGdQDxggm2yjNX/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.99,
+          -22.56
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Vale das Pedrinhas (Rua Quinze)",
+        "bairro": "Vale das Pedrinhas",
+        "municipio": "Guapimirim",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Mais de 48 h sem luz; equipes só no centro do bairro",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estou-sem-luz-ha-mais-de-48h-e-a-enel-nao-resolve_AvjerGXVmgVx_jmD/",
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estou-sem-luz-na-rua-quinze-ha-dois-dias-e-ninguem-resolve_2AuOOkNJW83cYTne/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.020799,
+          -22.665362
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Vila Olímpia",
+        "bairro": "Vila Olímpia",
+        "municipio": "Guapimirim",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "48 h sem luz; moradores perdendo comida",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/falta-de-luz-e-descumprimento-de-obrigacoes_DSrHyiae8HzVOsJZ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.795511,
+          -22.900618
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Condado",
+        "bairro": "Condado",
+        "municipio": "Maricá",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Bairro sem luz no temporal; problema recorrente",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/enel-deixou-meu-bairro-sem-luz-novamente-e-nao-encontram-meu-cadastro_RVtrScM0pG8GH9Xt/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.768327,
+          -22.957603
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Cordeirinho",
+        "bairro": "Cordeirinho",
+        "municipio": "Maricá",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Pontos do bairro sem energia",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/minha-energia-caiu-e-nao-voltou-desde-ontem-a-tarde-meu-bebe-esta-sofrendo_N7GiYa2cZCVRussd/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.364316,
+          -22.882063
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Adalberto Ramos, Outeiro",
+        "bairro": "Outeiro",
+        "municipio": "Araruama",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "Mais de 48 h sem luz",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estou-sem-luz-desde-ontem-a-noite-e-a-enel-nao-resolve_GgLZMeTlj-bgj8Rd/",
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/minha-rua-esta-sem-energia-ha-mais-de-48h-e-o-atendimento-e-horrivel_V8l7nSc9lio8pfrj/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.438218,
+          -22.872067
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "RJ-106 (Amaral Peixoto), km 73, Bonsucesso",
+        "bairro": "Bonsucesso",
+        "municipio": "Saquarema",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 24,
+        "fato": "Protesto com fogo na rodovia na noite de 8/11, após mais de 24 h sem luz",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://agendadopoder.com.br/falta-de-luz-deixa-cidades-da-regiao-dos-lagos-sem-energia-e-provoca-protesto-em-saquarema/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.06,
+          -22.86
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Rua dos Hibiscos Amarelos, Nova Vila Verde",
+        "bairro": "Maria Joaquina",
+        "municipio": "Cabo Frio",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 72,
+        "fato": "Protesto na entrada da rua; cerca de três dias sem luz",
+        "precisao": "rua",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://povonarua.com.br/cabo-frio-tres-dias-sem-luz-protesto-moradores/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.035213,
+          -22.883938
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Rua Inglaterra, Jardim Caiçara",
+        "bairro": "Jardim Caiçara",
+        "municipio": "Cabo Frio",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 28,
+        "fato": "Moradores bloquearam a rua após mais de 28 h sem luz",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://povonarua.com.br/cabo-frio-tres-dias-sem-luz-protesto-moradores/",
+          "https://www.portalviu.com.br/geral/temporal-deixa-mais-de-28-mil-sem-energia-na-regiao-dos-lagos"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.015729,
+          -22.878108
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Rua Miguel Couto, Centro",
+        "bairro": "Centro",
+        "municipio": "Cabo Frio",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Moradores relataram falta de luz após o temporal",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://povonarua.com.br/cabo-frio-tres-dias-sem-luz-protesto-moradores/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.631465,
+          -21.489939
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Ponte de Ferro e BR-356, Palmeiras",
+        "bairro": "Palmeiras",
+        "municipio": "Cardoso Moreira",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 24,
+        "fato": "Protesto com fogo e bloqueio parcial da BR-356 em 8/11; luz voltou após mais de 24 h",
+        "precisao": "ponto",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.italvaemfoco.com.br/2026/11/protesto-devido-falta-de-energia.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.6,
+          -21.505
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "BR-356 em frente a Gato Preto (Vermelha e Gato Preto)",
+        "bairro": "Gato Preto",
+        "municipio": "Cardoso Moreira",
+        "concessionaria": "Enel",
+        "nivel": "critico",
+        "horas_sem_luz": 96,
+        "fato": "Protesto na BR-356 em 9/11; casas com até quatro dias sem luz",
+        "precisao": "ponto",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.italvaemfoco.com.br/2026/11/protesto-bloqueia-br-356-entre-cardoso.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.91111,
+          -21.57528
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Guarani, Suburbano e Morro do Gil",
+        "bairro": "Guarani",
+        "municipio": "Cambuci",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "Bairros quase 24 h sem luz e com falta de água",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.camposemfoco.com.br/temporal-durante-aniversario-de-cambuci-deixa-bairros-sem-luz-e-agua/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.814573,
+          -21.413949
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "São João do Paraíso",
+        "bairro": "São João do Paraíso",
+        "municipio": "Cambuci",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 15,
+        "fato": "Distrito com mais de 15 h sem energia após o temporal",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.italvaemfoco.com.br/2026/11/moradores-de-sao-joao-do-paraiso-estao.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.92932,
+          -21.21513
+        ]
+      },
+      "properties": {
+        "origem": "imprensa",
+        "local": "Tanquinho (perto de Boa Ventura)",
+        "bairro": "Tanquinho",
+        "municipio": "Itaperuna",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 60,
+        "fato": "Morador relata luz de sábado à noite até terça (mais de dois dias)",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://clickcampos.com/noticia/moradores-relatam-prejuizos-apos-mais-de-dois-dias-sem-energia-eletrica/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.131345,
+          -22.384776
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Cândida Neves Xavier, Estrada das Arcas",
+        "bairro": "Itaipava",
+        "municipio": "Petrópolis",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Trecho fica sem luz a cada chuva ou vento forte",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/fico-sem-luz-toda-vez-que-chove-ou-venta-forte_z9LKhZFuATco4uT_/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.13576,
+          -22.343209
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Estrada Guilhermino Martinho, Bananeira",
+        "bairro": "Pedro do Rio",
+        "municipio": "Petrópolis",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 25,
+        "fato": "Sem energia (meia fase) desde a tarde de 8/11",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/falta-de-energia-em-minha-rua-desde-ontem-e-prazo-de-retorno-e-hoje-as-18h_GuLeStw40pub7I6E/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.21,
+          -22.5
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Várias ruas do bairro",
+        "bairro": "Mauá",
+        "municipio": "Petrópolis",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 10,
+        "fato": "Várias ruas sem luz; prazo de conserto adiado",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/falta-de-luz-no-bairro-maua-em-petropolis-e-descaso-da-companhia_B2u4IKyUfcVD7CrH/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.57861,
+          -22.54917
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Bairro Mangueiras",
+        "bairro": "Mangueiras",
+        "municipio": "Miguel Pereira",
+        "concessionaria": "Light",
+        "nivel": "afetado",
+        "horas_sem_luz": 23,
+        "fato": "Bairro inteiro sem luz desde 7/11 às 15h",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/light-servicos-de-eletricidade/estou-sem-luz-no-bairro-mangueiras-desde-ontem_3luL5DDwPnGKccsi/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.079877,
+          -21.668944
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Bairro Adolvane",
+        "bairro": "Adolvane",
+        "municipio": "Itaocara",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 8,
+        "fato": "Bairro demora até 8 h para ter a luz de volta a cada chuva",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/moradores-do-adolvane-insatisfeitos-com-falta-de-luz-da-enel-apos-chuva_yHu3zajjYiwIU_5v/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.205079,
+          -22.824679
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Dona Alvina, Coqueiros",
+        "bairro": "Coqueiros",
+        "municipio": "Iguaba Grande",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 10,
+        "fato": "Rua sem luz desde 7/11 às 16h; idosos e crianças",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/minha-rua-em-iguaba-grande-esta-sem-luz-desde-ontem-a-tarde_3WbKo_owgr2C5VCs/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.49741,
+          -22.931243
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rua Otilde de Inácia, Centro",
+        "bairro": "Centro",
+        "municipio": "Saquarema",
+        "concessionaria": "Enel",
+        "nivel": "alto",
+        "horas_sem_luz": 48,
+        "fato": "48 h sem luz em rua central",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estou-sem-luz-ha-quase-48-horas-e-nao-consigo-reclamar_M_qTA3AT3U-CTQOL/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.0066,
+          -22.6456
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Unamar / Tamoios (2º distrito)",
+        "bairro": "Tamoios",
+        "municipio": "Cabo Frio",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 20,
+        "fato": "Sem luz desde 7/11 às 19h30, só uma fase",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/fiquei-sem-luz-em-unamar-desde-ontem-e-ninguem-atende_f4Syzcrpw10NCEmQ/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.019711,
+          -22.880207
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Av. Teixeira de Souza, Centro",
+        "bairro": "Centro",
+        "municipio": "Cabo Frio",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": null,
+        "fato": "Reparo inacabado após a tempestade",
+        "precisao": "rua",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/continuo-sem-luz-em-cabo-frio-apos-tempestade-e-reparo-inacabado_mpBqajXPIJ1t5msP/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.9314,
+          -22.7698
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Rasa",
+        "bairro": "Rasa",
+        "municipio": "Armação dos Búzios",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 30,
+        "fato": "30 h sem luz; transformador queimado",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estamos-sem-luz-ha-30-horas-e-a-enel-nao-resolve_6nN6n8ubFZ70UWe7/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.8814,
+          -22.7463
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Praia dos Ossos",
+        "bairro": "Praia dos Ossos",
+        "municipio": "Armação dos Búzios",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 41,
+        "fato": "Sem energia desde 7/11 às 17h30",
+        "precisao": "bairro",
+        "posicao_conferida": true,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/minha-casa-de-aluguel-esta-sem-energia-ha-dias-e-a-enel-nao-resolve_9YFR-aeOvhs86RkD/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.79,
+          -22.36
+        ]
+      },
+      "properties": {
+        "origem": "morador (Reclame Aqui)",
+        "local": "Mirante da Lagoa",
+        "bairro": "Mirante da Lagoa",
+        "municipio": "Macaé",
+        "concessionaria": "Enel",
+        "nivel": "afetado",
+        "horas_sem_luz": 24,
+        "fato": "Transformador estourou; mais de 24 h sem luz",
+        "precisao": "bairro",
+        "posicao_conferida": false,
+        "fontes": [
+          "https://www.reclameaqui.com.br/enel-distribuicao-rio/estourou-o-transformador-e-estou-sem-luz-ha-mais-de-24-horas_wmDIYsjPbSLn3FiP/"
+        ]
+      }
+    }
+  ]
+}

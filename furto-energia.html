@@ -96,7 +96,7 @@ function render(){
  const cities=[...new Set(incidents.filter(c=>(c.company==="Enel Rio"?showEnel:showLight)).map(c=>c.city))].sort();
  const citySelect=document.getElementById('city');citySelect.innerHTML='<option value="all">Todos os municípios</option>'+cities.map(n=>'<option value="'+n+'">'+n+'</option>').join('');
  if(!cities.includes(currentCity))currentCity='all';citySelect.value=currentCity;citySelect.disabled=false;
- const total=list.reduce((sum,c)=>sum+c.count,0),streets=list.filter(c=>c.level==="Rua identificada").length,areas=new Set(list.map(c=>c.city+"|"+c.area)).size;
+ const total=list.length,streets=list.filter(c=>c.level==="Rua identificada").length,areas=new Set(list.map(c=>c.city+"|"+c.area)).size;
  document.querySelectorAll('.kpi b')[0].textContent=total.toLocaleString('pt-BR');
  document.querySelectorAll('.kpi b')[1].textContent=areas;
  document.querySelectorAll('.kpi b')[2].textContent=new Set(list.map(c=>c.city)).size;

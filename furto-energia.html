@@ -94,7 +94,7 @@ function render(){
  document.getElementById('city').innerHTML='<option value="all">Todos com dados</option>'+Object.keys(series[currentPeriod]).map(n=>'<option value="'+n+'">'+n+'</option>').join('');
  document.getElementById('city').value=currentCity==='all'||Object.prototype.hasOwnProperty.call(series[currentPeriod],currentCity)?currentCity:'all';
  document.getElementById('city').disabled=!showEnel;
- const vals=currentCompany==='Enel'?Object.values(values):[];
+ const vals=showEnel?Object.values(values):[];
  document.querySelectorAll('.kpi b')[0].textContent=showStreetCases?'9':'—';
  document.querySelectorAll('.kpi b')[1].textContent=showStreetCases?'3':'—';
  document.querySelectorAll('.kpi span')[0].textContent='Ligações irregulares identificadas';

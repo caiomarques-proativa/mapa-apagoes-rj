@@ -75,15 +75,15 @@ streetCases.forEach(c=>{const marker=L.circleMarker([c.lat,c.lng],{radius:7,colo
 function render(){
  const showStreetCases=showEnel&&currentPeriod==='2026h1';
  if(showStreetCases){streetLayer.addTo(map);document.getElementById('streetCases').style.display='block';document.getElementById('streetCaseList').innerHTML=streetCases.map(c=>'<div class="case-row"><b>'+c.street+'</b><span>'+c.count+' ligação(ões) identificada(s)</span><br>'+c.city+' · operação de '+c.date+'<br><a href="'+streetSource+'" target="_blank" rel="noopener">Ver fonte oficial ↗</a></div>').join('');}else{map.removeLayer(streetLayer);document.getElementById('streetCases').style.display='none';}
- const values=series[currentPeriod],available=currentCompany==='Enel'?Object.entries(values).filter(([n])=>currentCity==='all'||n===currentCity):[];
+ const values=series[currentPeriod],available=showEnel?Object.entries(values).filter(([n])=>currentCity==='all'||n===currentCity):[];
  layer.setStyle(styleFeature);
  layer.eachLayer(l=>{const n=l.feature.properties.n,v=valueFor(n);l.setTooltipContent(v===undefined?'<b>'+n+'</b><br>Sem indicador municipal publicado': '<b>'+n+'</b><br>Perdas não técnicas: <strong>'+v.toFixed(2).replace('.',',')+'%</strong><br>'+ (currentPeriod==='2025'?'Ano de 2025':'1º semestre de 2026'));});
  const ranking=document.getElementById('ranking');
  if(!showEnel){
-   ranking.innerHTML='<div class="empty" style="margin:4px 0"><strong>Sem série municipal comparável</strong><p>Os dados públicos encontrados da Light são regionais ou históricos. Para evitar falsa precisão, o mapa não colore municípios nesta seleção.</p></div>';
-   document.getElementById('lightNote').style.display='block';
-   document.getElementById('rankSubtitle').textContent='Dados municipais atuais não localizados';
-   document.getElementById('coverage').textContent='Light · sem ranking municipal público comparável';
+   ranking.innerHTML='<div class="empty" style="margin:4px 0"><strong>Indicador municipal Enel desativado</strong><p>Ative Enel Rio para ver o ranking disponível. A Light está selecionada, mas não há série municipal pública comparável para preencher o mapa.</p></div>';
+   document.getElementById('lightNote').style.display=showLight?'block':'none';
+   document.getElementById('rankSubtitle').textContent='Enel desativada · Light sem série municipal comparável';
+   document.getElementById('coverage').textContent='Nenhuma camada municipal comparável ativa';
  }else{
    document.getElementById('lightNote').style.display=showLight?'block':'none';
    document.getElementById('rankSubtitle').textContent=currentPeriod==='2025'?'Ano completo de 2025 · perdas não técnicas':'Janeiro a junho de 2026 · perdas não técnicas';
@@ -93,6 +93,7 @@ function render(){
  }
  document.getElementById('city').innerHTML='<option value="all">Todos com dados</option>'+Object.keys(series[currentPeriod]).map(n=>'<option value="'+n+'">'+n+'</option>').join('');
  document.getElementById('city').value=currentCity==='all'||Object.prototype.hasOwnProperty.call(series[currentPeriod],currentCity)?currentCity:'all';
+ document.getElementById('city').disabled=!showEnel;
  const vals=currentCompany==='Enel'?Object.values(values):[];
  document.querySelectorAll('.kpi b')[0].textContent=showStreetCases?'9':'—';
  document.querySelectorAll('.kpi b')[1].textContent=showStreetCases?'3':'—';
@@ -102,7 +103,7 @@ function render(){
 }
 document.getElementById('showEnel').addEventListener('change',e=>{showEnel=e.target.checked;currentCity='all';render();});
 document.getElementById('showLight').addEventListener('change',e=>{showLight=e.target.checked;render();});
-document.getElementById('period').addEventListener('change',e=>{currentPeriod=e.target.value;currentCity='all';render();if(showEnel&&currentPeriod==='2026h1'){map.fitBounds(L.latLngBounds(streetCases.map(c=>[c.lat,c.lng])),{padding:[65,65],maxZoom:11});}else{map.fitBounds(layer.getBounds(),{padding:[22,22]});}});
+document.getElementById('period').addEventListener('change',e=>{currentPeriod=e.target.value;currentCity='all';render();if(showEnel&&currentPeriod==='2026h1'){map.fitBounds(L.latLngBounds(streetCases.map(c=>[c.lat,c.lng])),{padding:[65,65],maxZoom:13});}else{map.fitBounds(layer.getBounds(),{padding:[22,22]});}});
 document.getElementById('city').addEventListener('change',e=>{currentCity=e.target.value;render();if(currentCity!=='all'){const target=layer.getLayers().find(l=>l.feature.properties.n===currentCity);if(target)map.fitBounds(target.getBounds(),{maxZoom:9,padding:[35,35]});else map.fitBounds(layer.getBounds());}else map.fitBounds(layer.getBounds(),{padding:[22,22]});});
 render();
 </script></body></html>

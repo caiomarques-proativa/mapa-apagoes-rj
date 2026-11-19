@@ -1036,12 +1036,13 @@
         "concessionaria": "Light",
         "nivel": "critico",
         "horas_sem_luz": null,
-        "fato": "Apagões e oscilação desde o fim de outubro; protesto marcado para sábado, 14/11, às 10h",
+        "fato": "Apagões e oscilação desde o fim de outubro; protesto marcado para sábado, 14/11, às 10h; Defensoria Pública abriu procedimento administrativo e informou envio de quatro geradores pela Light; antes da medida, relatos variavam de 1 a 3 horas sem energia em partes da ilha a até 3 dias em regiões específicas",
         "precisao": "bairro",
         "posicao_conferida": true,
         "fontes": [
           "https://brasilemfolhas.com.br/2026/11/moradores-de-paqueta-relatam-apagoes-e-oscilacoes-de-energia/",
-          "https://ncnews.com.br/2026/11/09/moradores-paqueta-enfrentam-apagoes/"
+          "https://ncnews.com.br/2026/11/09/moradores-paqueta-enfrentam-apagoes/",
+          "https://defensoria.rj.def.br/noticia/detalhes/33174-DPRJ-atua-pela-normalizacao-do-fornecimento-de-energia-eletrica-em-Paqueta-que-sofre-com-apagoes"
         ]
       }
     },

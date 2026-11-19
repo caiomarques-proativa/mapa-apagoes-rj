@@ -1,6 +1,6 @@
 # Vigilantes da Luz — monitoramento de interrupções no RJ
 
-Mapa interativo dos locais que ficaram sem luz após o temporal de 7 de novembro de 2026, em todo o estado do Rio de Janeiro. Atualizado em 18/11/2026.
+Mapa interativo dos locais que ficaram sem luz após o temporal de 7 de novembro de 2026, em todo o estado do Rio de Janeiro. Base de pontos atualizada em 18/11/2026; triagem de pistas e monitoramento atualizados em 19/11/2026.
 
 Abra `index.html` no navegador (Chrome ou Edge, com internet).
 

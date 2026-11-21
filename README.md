@@ -2,6 +2,47 @@
 
 Mapa interativo dos locais que ficaram sem luz após o temporal de 7 de novembro de 2026, em todo o estado do Rio de Janeiro. Base de pontos revisada em 19/11/2026; triagem de pistas e monitoramento atualizados em 19/11/2026.
 
+
+## Atualização matinal — 21/11/2026 (08h29 BRT)
+
+**Resultado cartográfico:** nenhum novo ponto confirmado. Nenhum candidato novo apresentou, simultaneamente, endereço de ocorrência verificável e coordenadas verificáveis. O Top 20, dados/pontos.csv, dados/pontos.geojson, dados/resumo_por_municipio.csv e index.html foram preservados.
+
+### Sinais novos em investigação
+
+- **São Gonçalo — Portão do Rosa, Rua Fernandes de Mendonça:** reclamação publicada em 20/11 às 22h03 diz que a rua estava sem luz e que moradores já haviam reclamado. A existência do logradouro e sua associação ao bairro são corroboradas por referência pública de endereço, mas não foi obtida coordenada verificável do trecho. Prioridade alta; não inserir no mapa até geocodificação confiável.
+- **Arraial do Cabo:** relato publicado em 20/11 às 18h31 descreve interrupções diárias desde 17/11, transformador antigo e troca de poste; sem bairro ou rua.
+- **São Francisco de Itabapoana:** relato de 20/11 às 23h55 afirma 5–6 interrupções por dia e baixa tensão em várias residências; sem localidade.
+- **Belford Roxo:** relato de 21/11 às 04h26 diz que a energia oscilou desde a tarde de 20/11 e caiu totalmente à noite; bairro e rua não informados.
+- **Nova Iguaçu — Botafogo:** relato de 21/11 às 04h27 descreve quedas repetidas em casas vizinhas desde 20/11; sem rua.
+- **Rio de Janeiro (capital):** duas reclamações novas na janela de publicação: uma relata falta desde 19/11 às 14h36 (36h50 até a publicação de 21/11 às 03h26); outra, publicada em 20/11, afirma falta desde 11/11 e aponta possível problema em fase no poste. Ambas sem bairro/logradouro; não há confirmação de abrangência coletiva.
+- **Saquarema:** menção municipal genérica publicada em 21/11 às 05h50. Pode se sobrepor tematicamente às pistas anteriores de Saquarema e Vilatur; não contar como ocorrência distinta.
+- **Rio de Janeiro — Edifício Portobianco:** relato de 20/11 às 22h48 atribui a interrupção ao corte/furto de cabos no poste em frente ao edifício. Endereço mascarado e possível sobreposição com reclamação anterior de condomínio; não contar separadamente até deduplicação.
+
+### Snapshot operacional agregado
+
+Powercut, às **08h20 de 21/11**: **173 faltas** e **3.049 clientes sem energia** na página estadual. Maiores agrupamentos identificados como Enel Rio: Cidade Parque Paulista (572), Guapimirim (441), Araruama (421), São José do Vale do Rio Preto (218), Santa Lúcia (182), Itatiaia (134), Itaperuna (114), Tamoios (110), Jacuacanga (67), Casimiro de Abreu (66), Cantagalo (61) e Jaconé (46).
+
+Comparação com o snapshot estadual de 20/11 às 08h40 (212 faltas e 4.545 clientes): redução de 39 registros e 1.496 clientes no retrato agregado. Isso não prova que cada ocorrência anterior foi encerrada. O total estadual pode reunir mais de uma distribuidora; os agrupamentos acima aparecem identificados como Enel Rio. O agregador declara coletar os mapas públicos a cada 10 minutos e não fornece endereço, início, duração ou coordenadas individuais.
+
+### Qualidade e cobertura das fontes
+
+- **Enel:** página oficial do Mapa da Energia acessível; mapa dinâmico não apresentou tabela preenchida na extração desta rodada. A própria página alerta que os registros podem incluir desligamentos inferiores a três minutos e refletir manobras operacionais.
+- **Light:** Mapa de Ocorrências Emergenciais acessível, mas sem conteúdo textual legível para extração nesta consulta.
+- **ANEEL:** indicadores coletivos DEC/FEC disponíveis; atualização mensal e granularidade por conjunto de unidades consumidoras, inadequados para localizar ocorrência diária por rua.
+- **Prefeituras/Defesa Civil/Procons e imprensa:** nenhuma nova publicação com endereço e coordenadas verificáveis foi localizada na janela pesquisada.
+
+### Auditoria da base
+
+- 120 pontos no CSV e 120 feições no GeoJSON.
+- 96 registros com posicao_conferida=sim; isso indica conferência de posição, não necessariamente precisão de quarteirão.
+- Precisão declarada no CSV: 24 registros rua, 15 ponto e 81 bairro.
+- Nenhuma coordenada nova foi criada, nenhuma posição foi alterada e o Top 20 foi preservado.
+- As 9 pistas desta rodada e o snapshot agregado foram acrescentados a dados/pistas_nao_verificadas.csv; permanecem fora da camada cartográfica.
+
+**PDF:** não gerado nesta rodada porque não houve novo ponto confirmado para incorporar. O relatório de investigação fica registrado nesta seção e no CSV de pistas.
+
+
+
 Abra `index.html` no navegador (Chrome ou Edge, com internet).
 
 ## Cobertura
